@@ -20,7 +20,7 @@
     "test": "karma start ./karma.conf.js",
     "lint": "eslint ./src",
     "i18n": "cd ./scripts && ./node_modules/.bin/babel-node i18n-collect.js",
-    "build": "rm -rf dist/ && webpack --progress --colors -p",
+    "build": "rm -rf dist/ && NODE_ENV=production webpack --progress --colors",
     "render": ""
   },
   "dependencies": {

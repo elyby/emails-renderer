@@ -1,19 +1,17 @@
 /* eslint-env node */
 
-var path = require('path');
+const path = require('path');
 
-var webpack = require('webpack');
-var loaderUtils = require('loader-utils');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var cssUrl = require('webpack-utils/cssUrl');
-var cssImport = require('postcss-import');
-
-var vendor = Object.keys(require('./package.json').dependencies);
+const webpack = require('webpack');
+const loaderUtils = require('loader-utils');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const cssUrl = require('webpack-utils/cssUrl');
+const cssImport = require('postcss-import');
 
 const rootPath = path.resolve('./src');
 
-const isProduction = process.argv.some((arg) => arg === '-p');
+const isProduction = process.env.NODE_ENV === 'production';
 
 process.env.NODE_ENV = isProduction ? 'production' : 'development';
 
@@ -48,14 +46,16 @@ const cssLoaderQuery = {
 
 var webpackConfig = {
     entry: {
-        app: path.join(__dirname, 'src'),
-        vendor: vendor
+        app: path.join(__dirname, 'src')
     },
+
+    target: isProduction ? 'node' : 'web',
 
     output: {
         path: path.join(__dirname, 'dist'),
         publicPath: '/',
-        filename: '[name].js?[hash]'
+        filename: isProduction ? '[name].js' : '[name].js?[hash]',
+        libraryTarget: isProduction ? 'commonjs' : undefined
     },
 
     resolve: {
@@ -92,22 +92,13 @@ var webpackConfig = {
         new HtmlWebpackPlugin({
             template: 'src/index.ejs',
             favicon: 'src/favicon.ico',
-            hash: isProduction,
             filename: 'index.html',
-            inject: false,
-            minify: {
-                collapseWhitespace: isProduction
-            }
+            inject: false
         }),
         new webpack.ProvidePlugin({
-            // window.fetch polyfill
-            fetch: 'imports?this=>self!exports?self.fetch!whatwg-fetch'
-        }),
-        new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js?[hash]')
-    ].concat(isProduction ? [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin()
-    ] : []),
+            React: 'react'
+        })
+    ],
 
     module: {
         loaders: [
