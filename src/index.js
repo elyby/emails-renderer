@@ -5,16 +5,16 @@ import ReactDOMServer from 'react-dom/server';
 
 import App from 'App';
 
-const isCli = typeof window === 'undefined';
+/* global process: false */
+if (process.env.NODE_ENV !== 'production') {
+    const DevApp = require('devTools').default;
 
-if (isCli) {
-    module.exports = {
-        default: (props) =>
-            ReactDOMServer.renderToStaticMarkup(<App {...props} />)
-    };
-} else {
     ReactDOM.render(
-        <App type="register" payload={{locale: 'ru'}} debug />,
+        <DevApp />,
         document.getElementById('app')
     );
+}
+
+export default function(props) {
+    return ReactDOMServer.renderToStaticMarkup(<App {...props} />);
 }

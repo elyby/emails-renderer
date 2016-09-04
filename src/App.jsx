@@ -7,16 +7,14 @@ import ruLocaleData from 'react-intl/locale-data/ru';
 import beLocaleData from 'react-intl/locale-data/be';
 import ukLocaleData from 'react-intl/locale-data/uk';
 
-// till we have not so many locales, we can require their data at once
 addLocaleData(enLocaleData);
 addLocaleData(ruLocaleData);
 addLocaleData(beLocaleData);
 addLocaleData(ukLocaleData);
 
-const SUPPORTED_LANGUAGES = ['ru', 'en', 'be', 'uk'];
-const DEFAULT_LANGUAGE = 'en';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './constants';
 
-export default function App({type, payload = {}, debug = false}) {
+export default function App({type, payload = {}}) {
     let {locale} = payload;
 
     if (!locale || SUPPORTED_LANGUAGES.indexOf(locale) === -1) {
@@ -28,16 +26,7 @@ export default function App({type, payload = {}, debug = false}) {
 
     return (
         <IntlProvider locale={locale} messages={messages}>
-            {debug
-                ? (
-                    <div>
-                        Hello world
-                        <Email {...payload} />
-                    </div>
-                ) : (
-                    <Email {...payload} />
-                )
-            }
+            <Email {...payload} />
         </IntlProvider>
     );
 }
@@ -46,6 +35,5 @@ App.propTypes = {
     type: PropTypes.string.isRequired,
     payload: PropTypes.shape({
         locale: PropTypes.string
-    }),
-    debug: PropTypes.bool
+    })
 };
