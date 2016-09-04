@@ -1,29 +1,11 @@
 import 'babel-polyfill';
 
-import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactDOMServer from 'react-dom/server';
 
-import { IntlProvider } from 'react-intl';
-
-import Register from 'emails/register';
+import App from 'App';
 
 const isCli = typeof window === 'undefined';
-
-const App = ({type, payload = {}}) => (
-    <IntlProvider locale="en" messages={{}}>
-        {isCli
-            ? (
-                <Register {...payload} />
-            ) : (
-                <div>
-                    Hello world
-                    <Register {...payload} />
-                </div>
-            )
-        }
-    </IntlProvider>
-);
 
 if (isCli) {
     module.exports = {
@@ -31,5 +13,8 @@ if (isCli) {
             ReactDOMServer.renderToStaticMarkup(<App {...props} />)
     };
 } else {
-    ReactDOM.render(<App />, document.getElementById('app'));
+    ReactDOM.render(
+        <App type="register" payload={{locale: 'ru'}} debug />,
+        document.getElementById('app')
+    );
 }

@@ -188,7 +188,7 @@
         "react/jsx-max-props-per-line": ["warn", {"maximum": 3}],
         "react/jsx-no-bind": "warn",
         "react/jsx-no-duplicate-props": "warn",
-        "react/jsx-no-literals": "warn",
+        "react/jsx-no-literals": "off",
         "react/jsx-no-undef": "warn",
         "react/jsx-pascal-case": "warn",
         "react/jsx-uses-react": "warn",
@@ -206,7 +206,7 @@
         "react/no-unknown-property": "warn",
         "react/prefer-es6-class": "warn",
         "react/prop-types": "warn",
-        "react/react-in-jsx-scope": "warn",
+        "react/react-in-jsx-scope": "off",
         "react/self-closing-comp": "warn",
         "react/sort-comp": ["warn", {"order": ["lifecycle", "render", "everything-else"]}]
     }
