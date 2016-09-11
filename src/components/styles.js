@@ -6,4 +6,4 @@ export default {
     container: {
         width: '600px'
     }
-}
+};

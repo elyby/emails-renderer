@@ -14,6 +14,8 @@ addLocaleData(ukLocaleData);
 
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './constants';
 
+import BaseLayout from 'components/BaseLayout';
+
 export default function App({type, payload = {}}) {
     let {locale} = payload;
 
@@ -26,7 +28,9 @@ export default function App({type, payload = {}}) {
 
     return (
         <IntlProvider locale={locale} messages={messages}>
-            <Email {...payload} />
+            <BaseLayout>
+                <Email {...payload} />
+            </BaseLayout>
         </IntlProvider>
     );
 }

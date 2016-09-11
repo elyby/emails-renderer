@@ -1,4 +1,4 @@
-import { Table } from './../';
+import { Table } from 'components/table';
 
 import styles from './styles';
 
@@ -8,8 +8,7 @@ export default function Userbar() {
     return (
         <Table style={styles.userbar}>
             <tr>
-                <td style={styles.marginColumn}>
-                </td>
+                <td style={styles.marginColumn} />
                 <td style={styles.logoColumn}>
                     <div style={styles.logo}>
                         {/* TODO: здесь нужно динамически сформировать название, т.к. может быть Ёly.by */}

@@ -1,7 +1,3 @@
-import styles from './styles';
-
-import { Table } from './';
-
 export default function Html(props) {
     return (
         <html>
@@ -12,19 +8,7 @@ export default function Html(props) {
             <body style={{
                 margin: 0
             }}>
-                <Table style={styles.body}>
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                        <td style={styles.container}>
-                            {props.children}
-                        </td>
-                        <td>
-                            &nbsp;
-                        </td>
-                    </tr>
-                </Table>
+                {props.children}
             </body>
         </html>
     );

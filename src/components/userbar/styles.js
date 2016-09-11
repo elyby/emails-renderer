@@ -12,4 +12,4 @@ export default {
         verticalAlign: 'middle',
         padding: '0 13px'
     }
-}
+};
