@@ -10,16 +10,17 @@ import { Input } from 'components/input';
 import styles from './styles';
 import messages from './messages.intl.json';
 
-import welcomeImage from './images/welcome.png';
-import confirmEmailImage from './images/confirmEmail.png';
-import whatsNextImage from './images/whatsNext.png';
 import violetManImage from './images/violetMan.png';
-import chooseYouSkin from './images/chooseYouSkin.png';
 import orangeManImage from './images/orangeMan.png';
-import installOurPatch from './images/installOurPatch.png';
 import darkBlueManImage from './images/darkBlueMan.png';
-import useTLauncher from './images/useTlauncher.png';
-import footerLogoImage from './images/footerLogo.png';
+
+import welcomeImage from './images/ru/welcome.png';
+import confirmEmailImage from './images/ru/confirmEmail.png';
+import whatsNextImage from './images/ru/whatsNext.png';
+import chooseYouSkin from './images/ru/chooseYouSkin.png';
+import installOurPatch from './images/ru/installOurPatch.png';
+import useTLauncher from './images/ru/useTlauncher.png';
+import footerLogoImage from './images/ru/footerLogo.png';
 
 export default function Register({username, link, code}) {
     return (
@@ -35,6 +36,8 @@ export default function Register({username, link, code}) {
                         <Message {...messages.welcome_image}>{(message) =>
                             <img src={welcomeImage} alt={message} style={{
                                 width: '374px',
+                                // width: '231px',
+                                // width: '407px',
                                 verticalAlign: 'middle'
                             }}/>
                         }</Message>
@@ -62,6 +65,8 @@ export default function Register({username, link, code}) {
                                     <Message {...messages.confirm_email_image}>{(message) =>
                                         <img src={confirmEmailImage} alt={message} style={{
                                             width: '147px',
+                                            // width: '104px',
+                                            // width: '144px',
                                             verticalAlign: 'middle'
                                         }} />
                                     }</Message>
@@ -102,6 +107,8 @@ export default function Register({username, link, code}) {
                             <Message {...messages.whats_next_image}>{(message) =>
                                 <img src={whatsNextImage} alt={message} style={{
                                     width: '168px',
+                                    // width: '202px',
+                                    // width: '154px',
                                     verticalAlign: 'middle'
                                 }} />
                             }</Message>
@@ -122,6 +129,8 @@ export default function Register({username, link, code}) {
                                         <Message {...messages.choose_you_skin_image}>{(message) =>
                                             <img src={chooseYouSkin} alt={message} style={{
                                                 width: '179px',
+                                                // width: '159px',
+                                                // width: '176px',
                                                 verticalAlign: 'middle'
                                             }} />
                                         }</Message>
@@ -151,6 +160,8 @@ export default function Register({username, link, code}) {
                                         <Message {...messages.install_our_patch_image}>{(message) =>
                                             <img src={installOurPatch} alt={message} style={{
                                                 width: '252px',
+                                                // width: '264px',
+                                                // width: '271px',
                                                 verticalAlign: 'middle'
                                             }} />
                                         }</Message>
@@ -180,6 +191,8 @@ export default function Register({username, link, code}) {
                                         <Message {...messages.use_tlauncher_image}>{(message) =>
                                             <img src={useTLauncher} alt={message} style={{
                                                 width: '209px',
+                                                // width: '138px',
+                                                // width: '260px',
                                                 verticalAlign: 'middle'
                                             }} />
                                         }</Message>
@@ -213,6 +226,8 @@ export default function Register({username, link, code}) {
                             <Message {...messages.footer_logo_alt}>{(message) =>
                                 <img src={footerLogoImage} alt={message} style={{
                                     width: '177px',
+                                    // width: '139px',
+                                    // width: '175px',
                                     verticalAlign: 'middle'
                                 }} />
                             }</Message>
