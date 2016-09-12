@@ -200,7 +200,12 @@ export default function Register({username, link, code}) {
             <Table style={styles.footer}>
                 <tr>
                     <td style={styles.footerText}>
-                        <Message {...messages.footer} />
+                        <Message {...messages.footer} values={{
+                            serviceLink:
+                                <a href="https://account.ely.by" style={styles.footerLink}>
+                                    <Message {...messages.service_name} />
+                                </a>
+                        }} />
                     </td>
                     <td style={styles.footerLogo}>
                         <a href="http://ely.by">

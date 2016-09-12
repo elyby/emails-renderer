@@ -12,6 +12,7 @@
     "emails.register.install_our_patch_text": "Для таго, каб сістема скіноў Ely.by працавала, табе патрэбна ўстанавіць наш патч. Знайсці яго можна ў раздзеле загрузак на сайце.",
     "emails.register.use_tlauncher_image": "Выкарыстоўвай TLauncher",
     "emails.register.use_tlauncher_text": "Усё значна лягчэй, калі ты выкарыстоўваеш правільную прыладу для сваёй задачы. TLauncher з'яўляецца лепшым альтэрнатыўным лаунчарам для Minecraft, які таксама мае ўбудаваную падтрымку Ely.by.",
-    "emails.register.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе Акаўнты Ely.by. Калі гэта быў не ты, то проста выдалі гэты ліст.",
+    "emails.register.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе {serviceLink}. Калі гэта быў не ты, то проста выдалі гэты ліст.",
+    "emails.register.service_name": "Акаўнты Ely.by",
     "emails.register.footer_logo_alt": "Ely.by - Альтэрнатыўныя сэрвісы Minecraft"
 }

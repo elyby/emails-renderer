@@ -12,6 +12,7 @@
     "install_our_patch_text": "You should install our patch to make the Ely.by's skin system working. You can find it at 'Load' section.",
     "use_tlauncher_image": "Use TLauncher",
     "use_tlauncher_text": "It is much easier, when you use right tool for right purpose. TLauncher is one of the best alternative launchers for the Minecraft, that also has installed Ely.by's support system.",
-    "footer": "You have received this message,because this E-mail was set during registration at the Ely.by's account servises. If it wasn't you just delete the message please.",
+    "footer": "You have received this message, because this E‑mail was set during registration at the {serviceLink} service. If it wasn't you just delete the message please.",
+    "service_name": "Accounts Ely.by",
     "footer_logo_alt": "Ely.by - Alternative Minecraft services"
 }

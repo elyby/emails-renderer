@@ -7,9 +7,13 @@ export default {
         width: '20px'
     },
     logoColumn: {
-        background: '#1A6449',
         width: '1%',
-        verticalAlign: 'middle',
-        padding: '0 13px'
+        verticalAlign: 'middle'
+    },
+    logo: {
+        background: '#1A6449',
+        padding: '0 13px',
+        display: 'block',
+        lineHeight: '50px'
     }
 };
