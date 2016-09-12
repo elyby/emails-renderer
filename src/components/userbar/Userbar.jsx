@@ -12,7 +12,7 @@ export default function Userbar() {
                 <td style={styles.logoColumn}>
                     <div style={styles.logo}>
                         {/* TODO: здесь нужно динамически сформировать название, т.к. может быть Ёly.by */}
-                        <img src={logoImage} style={{
+                        <img src={logoImage} alt="Ely.by" style={{
                             width: '65px',
                             verticalAlign: 'middle'
                         }} />
