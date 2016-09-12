@@ -1,3 +1,17 @@
 {
-    "emails.register.you_registered_as": "You have been registered as {username}"
+    "emails.register.hello_username": "Hello, {username}",
+    "emails.register.welcome_image": "Welcome to Ely.by",
+    "emails.register.we_glad_to_see_you": "We glad to see you among the users of Ely.by. You almost reached the final point, it remains only to confirm your E-mail address.For doing it, please push a button under the text.",
+    "emails.register.confirm_email_image": "Confirm E‑mail",
+    "emails.register.or": "or",
+    "emails.register.pass_code_in_field": "Use this code in an entry field of our site:",
+    "emails.register.whats_next_image": "What's the next?",
+    "emails.register.choose_you_skin_image": "Choose your skin",
+    "emails.register.choose_you_skin_text": "In Ely.by's catalog you can find great diversity of skins, which are ready to be put up.",
+    "emails.register.install_our_patch_image": "Install our patch in the game",
+    "emails.register.install_our_patch_text": "You should install our patch to make the Ely.by's skin system working. You can find it at 'Load' section.",
+    "emails.register.use_tlauncher_image": "Use TLauncher",
+    "emails.register.use_tlauncher_text": "It is much easier, when you use right tool for right purpose. TLauncher is one of the best alternative launchers for the Minecraft, that also has installed Ely.by's support system.",
+    "emails.register.footer": "You have received this message,because this E-mail was set during registration at the Ely.by's account servises. If it wasn't you just delete the message please.",
+    "emails.register.footer_logo_alt": "Ely.by - Alternative Minecraft services"
 }

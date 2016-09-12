@@ -28,11 +28,16 @@ export default function Register({username, link, code}) {
             <Table style={styles.headerImage}>
                 <tr>
                     <td style={styles.headerTextContainer}>
-                        <div style={styles.welcomeUsername}>Привет, {username}</div>
-                        <img src={welcomeImage} alt="Добро пожаловать на Ely.by" style={{
-                            width: '374px',
-                            verticalAlign: 'middle'
-                        }} />
+                        <div style={styles.welcomeUsername}>
+                            <Message {...messages.hello_username} values={{username}} />
+                        </div>
+                        {/* TODO: картинка и её alt */}
+                        <Message {...messages.welcome_image}>{(message) =>
+                            <img src={welcomeImage} alt={message} style={{
+                                width: '374px',
+                                verticalAlign: 'middle'
+                            }}/>
+                        }</Message>
                     </td>
                 </tr>
             </Table>
@@ -41,7 +46,9 @@ export default function Register({username, link, code}) {
                 <Table>
                     <tr>
                         <td>
-                            <div style={styles.paragraph}>Мы рады видеть тебя в рядах пользователей проекта Ely.by. Ты уже почти у цели, осталось лишь подтвердить свой E‑mail адрес. Чтобы сделать это, пожалуйста, нажми на кнопку, которая расположена ниже.</div>
+                            <div style={styles.paragraph}>
+                                <Message {...messages.we_glad_to_see_you} />
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -51,10 +58,13 @@ export default function Register({username, link, code}) {
                         }}>
                             <a href={link}>
                                 <Button style={styles.confirmEmailButton}>
-                                    <img src={confirmEmailImage} alt="Подтвердить E-mail" style={{
-                                        width: '147px',
-                                        verticalAlign: 'middle'
-                                    }} />
+                                    {/* TODO: текст и картинка */}
+                                    <Message {...messages.confirm_email_image}>{(message) =>
+                                        <img src={confirmEmailImage} alt={message} style={{
+                                            width: '147px',
+                                            verticalAlign: 'middle'
+                                        }} />
+                                    }</Message>
                                 </Button>
                             </a>
                         </td>
@@ -64,7 +74,7 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.orCell,
                         }}>
-                            или
+                            <Message {...messages.or} />
                         </td>
                     </tr>
                     <tr>
@@ -72,7 +82,7 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.codeLabelCell
                         }}>
-                            Укажи этот код в поле ввода на сайте:
+                            <Message {...messages.pass_code_in_field} />
                         </td>
                     </tr>
                     <tr>
@@ -88,10 +98,13 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.whatsNextText
                         }}>
-                            <img src={whatsNextImage} alt="Что дальше?" style={{
-                                width: '168px',
-                                verticalAlign: 'middle'
-                            }} />
+                            {/* TODO: текст и картинка */}
+                            <Message {...messages.whats_next_image}>{(message) =>
+                                <img src={whatsNextImage} alt={message} style={{
+                                    width: '168px',
+                                    verticalAlign: 'middle'
+                                }} />
+                            }</Message>
                         </td>
                     </tr>
                     <tr>
@@ -105,14 +118,19 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <img src={chooseYouSkin} style={{
-                                            width: '179px',
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        {/* TODO: текст и картинка */}
+                                        <Message {...messages.choose_you_skin_image}>{(message) =>
+                                            <img src={chooseYouSkin} alt={message} style={{
+                                                width: '179px',
+                                                verticalAlign: 'middle'
+                                            }} />
+                                        }</Message>
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
-                                        }}>В каталоге скинов Ely.by ты сможешь найти множество разнообразных скинов, каждый из которых готов к тому, чтобы быть надетым.</div>
+                                        }}>
+                                            <Message {...messages.choose_you_skin_text} />
+                                        </div>
                                     </td>
                                 </tr>
                             </Table>
@@ -129,14 +147,19 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <img src={installOurPatch} style={{
-                                            width: '252px',
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        {/* TODO: текст и картинка */}
+                                        <Message {...messages.install_our_patch_image}>{(message) =>
+                                            <img src={installOurPatch} alt={message} style={{
+                                                width: '252px',
+                                                verticalAlign: 'middle'
+                                            }} />
+                                        }</Message>
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
-                                        }}>Для того, чтобы система скинов Ely.by работала, тебе нужно установить наш патч. Найти его можно в разделе загрузок на сайте.</div>
+                                        }}>
+                                            <Message {...messages.install_our_patch_text} />
+                                        </div>
                                     </td>
                                 </tr>
                             </Table>
@@ -153,14 +176,19 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <img src={useTLauncher} style={{
-                                            width: '209px',
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        {/* TODO: текст и картинка */}
+                                        <Message {...messages.use_tlauncher_image}>{(message) =>
+                                            <img src={useTLauncher} alt={message} style={{
+                                                width: '209px',
+                                                verticalAlign: 'middle'
+                                            }} />
+                                        }</Message>
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
-                                        }}>Всё гораздо проще, когда ты используешь правильный инструмент для своей задачи. TLauncher является лучшим альтернативным лаунчером для Minecraft, который также имеет встроенную поддержку Ely.by.</div>
+                                        }}>
+                                            <Message {...messages.use_tlauncher_text} />
+                                        </div>
                                     </td>
                                 </tr>
                             </Table>
@@ -171,13 +199,18 @@ export default function Register({username, link, code}) {
 
             <Table style={styles.footer}>
                 <tr>
-                    <td style={styles.footerText}>Ты получил это письмо, т.к. этот E-mail был указан при регистрации на сервисе Аккаунты Ely.by. Если это был не ты, то просто удали это письмо.</td>
+                    <td style={styles.footerText}>
+                        <Message {...messages.footer} />
+                    </td>
                     <td style={styles.footerLogo}>
                         <a href="http://ely.by">
-                            <img src={footerLogoImage} style={{
-                                width: '177px',
-                                verticalAlign: 'middle'
-                            }} />
+                            {/* TODO: текст и картинка */}
+                            <Message {...messages.footer_logo_alt}>{(message) =>
+                                <img src={footerLogoImage} alt={message} style={{
+                                    width: '177px',
+                                    verticalAlign: 'middle'
+                                }} />
+                            }</Message>
                         </a>
                     </td>
                 </tr>
