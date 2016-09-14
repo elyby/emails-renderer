@@ -38,7 +38,7 @@ const webpackConfig = {
         historyApiFallback: true
     },
 
-    devtool: isProduction ? 'eval' : false,
+    devtool: isProduction ? false : 'eval',
 
     plugins: [
         new webpack.DefinePlugin({
