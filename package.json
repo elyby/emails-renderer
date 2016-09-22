@@ -47,6 +47,7 @@
     "extract-text-webpack-plugin": "^1.0.0",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.0.0",
+    "image-size-loader": "^0.7.0",
     "json-loader": "^0.5.4",
     "scripts": "file:scripts",
     "url-loader": "^0.5.7",

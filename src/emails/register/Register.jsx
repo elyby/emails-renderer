@@ -6,6 +6,7 @@ import { Userbar } from 'components/userbar';
 import { Table } from 'components/table';
 import { Button } from 'components/button';
 import { Input } from 'components/input';
+import { BitmapText } from 'components/text';
 
 import styles from './styles';
 import messages from './messages.intl.json';
@@ -14,7 +15,6 @@ import violetManImage from './images/violetMan.png';
 import orangeManImage from './images/orangeMan.png';
 import darkBlueManImage from './images/darkBlueMan.png';
 
-import welcomeImage from './images/ru/welcome.png';
 import confirmEmailImage from './images/ru/confirmEmail.png';
 import whatsNextImage from './images/ru/whatsNext.png';
 import chooseYouSkin from './images/ru/chooseYouSkin.png';
@@ -32,15 +32,8 @@ export default function Register({username, link, code}) {
                         <div style={styles.welcomeUsername}>
                             <Message {...messages.hello_username} values={{username}} />
                         </div>
-                        {/* TODO: картинка и её alt */}
-                        <Message {...messages.welcome_image}>{(message) =>
-                            <img src={welcomeImage} alt={message} style={{
-                                width: '374px',
-                                // width: '231px',
-                                // width: '407px',
-                                verticalAlign: 'middle'
-                            }}/>
-                        }</Message>
+
+                        <BitmapText message={messages.welcome_image} />
                     </td>
                 </tr>
             </Table>

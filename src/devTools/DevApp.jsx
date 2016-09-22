@@ -19,7 +19,7 @@ export default class DevApp extends Component {
     componentWillMount() {
         try {
             const lastState = JSON.parse(localStorage.getItem('emailRendererState'));
-            this.setState(lastState);
+            lastState && this.setState(lastState);
         } catch (err) {/* no state was saved */}
     }
 
