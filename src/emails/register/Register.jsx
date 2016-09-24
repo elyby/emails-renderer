@@ -15,13 +15,6 @@ import violetManImage from './images/violetMan.png';
 import orangeManImage from './images/orangeMan.png';
 import darkBlueManImage from './images/darkBlueMan.png';
 
-import confirmEmailImage from './images/ru/confirmEmail.png';
-import whatsNextImage from './images/ru/whatsNext.png';
-import chooseYouSkin from './images/ru/chooseYouSkin.png';
-import installOurPatch from './images/ru/installOurPatch.png';
-import useTLauncher from './images/ru/useTlauncher.png';
-import footerLogoImage from './images/ru/footerLogo.png';
-
 export default function Register({username, link, code}) {
     return (
         <div>
@@ -33,7 +26,9 @@ export default function Register({username, link, code}) {
                             <Message {...messages.hello_username} values={{username}} />
                         </div>
 
-                        <BitmapText message={messages.welcome_image} />
+                        <BitmapText message={messages.welcome_image} style={{
+                            verticalAlign: 'middle'
+                        }} />
                     </td>
                 </tr>
             </Table>
@@ -54,15 +49,9 @@ export default function Register({username, link, code}) {
                         }}>
                             <a href={link}>
                                 <Button style={styles.confirmEmailButton}>
-                                    {/* TODO: текст и картинка */}
-                                    <Message {...messages.confirm_email_image}>{(message) =>
-                                        <img src={confirmEmailImage} alt={message} style={{
-                                            width: '147px',
-                                            // width: '104px',
-                                            // width: '144px',
-                                            verticalAlign: 'middle'
-                                        }} />
-                                    }</Message>
+                                    <BitmapText message={messages.confirm_email_image} style={{
+                                        verticalAlign: 'middle'
+                                    }} />
                                 </Button>
                             </a>
                         </td>
@@ -96,15 +85,9 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.whatsNextText
                         }}>
-                            {/* TODO: текст и картинка */}
-                            <Message {...messages.whats_next_image}>{(message) =>
-                                <img src={whatsNextImage} alt={message} style={{
-                                    width: '168px',
-                                    // width: '202px',
-                                    // width: '154px',
-                                    verticalAlign: 'middle'
-                                }} />
-                            }</Message>
+                            <BitmapText message={messages.whats_next_image} style={{
+                                verticalAlign: 'middle'
+                            }} />
                         </td>
                     </tr>
                     <tr>
@@ -118,15 +101,9 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        {/* TODO: текст и картинка */}
-                                        <Message {...messages.choose_you_skin_image}>{(message) =>
-                                            <img src={chooseYouSkin} alt={message} style={{
-                                                width: '179px',
-                                                // width: '159px',
-                                                // width: '176px',
-                                                verticalAlign: 'middle'
-                                            }} />
-                                        }</Message>
+                                        <BitmapText message={messages.choose_you_skin_image} style={{
+                                            verticalAlign: 'middle'
+                                        }} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -149,15 +126,9 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        {/* TODO: текст и картинка */}
-                                        <Message {...messages.install_our_patch_image}>{(message) =>
-                                            <img src={installOurPatch} alt={message} style={{
-                                                width: '252px',
-                                                // width: '264px',
-                                                // width: '271px',
-                                                verticalAlign: 'middle'
-                                            }} />
-                                        }</Message>
+                                        <BitmapText message={messages.install_our_patch_image} style={{
+                                            verticalAlign: 'middle'
+                                        }} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -180,15 +151,9 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        {/* TODO: текст и картинка */}
-                                        <Message {...messages.use_tlauncher_image}>{(message) =>
-                                            <img src={useTLauncher} alt={message} style={{
-                                                width: '209px',
-                                                // width: '138px',
-                                                // width: '260px',
-                                                verticalAlign: 'middle'
-                                            }} />
-                                        }</Message>
+                                        <BitmapText message={messages.use_tlauncher_image} style={{
+                                            verticalAlign: 'middle'
+                                        }} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -215,15 +180,9 @@ export default function Register({username, link, code}) {
                     </td>
                     <td style={styles.footerLogo}>
                         <a href="http://ely.by">
-                            {/* TODO: текст и картинка */}
-                            <Message {...messages.footer_logo_alt}>{(message) =>
-                                <img src={footerLogoImage} alt={message} style={{
-                                    width: '177px',
-                                    // width: '139px',
-                                    // width: '175px',
-                                    verticalAlign: 'middle'
-                                }} />
-                            }</Message>
+                            <BitmapText message={messages.footer_logo_alt} style={{
+                                verticalAlign: 'middle'
+                            }} />
                         </a>
                     </td>
                 </tr>
