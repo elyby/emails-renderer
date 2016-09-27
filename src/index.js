@@ -22,6 +22,12 @@ if (process.env.NODE_ENV !== 'production') {
 
     module.exports = {
         default(props) {
+            if (props.assetsHost) {
+                __webpack_public_path__ = props.assetsHost.replace(/\/*$/, '/'); // eslint-disable-line
+
+                Reflect.deleteProperty(props, 'assetsHost');
+            }
+
             return ReactDOMServer.renderToStaticMarkup(
                 <Html>
                     <App {...props} />

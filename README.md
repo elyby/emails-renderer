@@ -1,7 +1,7 @@
 This package allows rendering of React components into plain HTML to use it in emails. Each directory in `emails` dir corresponds to separate email template. Each email component will receive payload, passed from command line:
 
 ```
-node cli --type=<email_dir_name> --payload=<json_encoded_in_base64>
+node cli --type=<email_dir_name> --payload=<json_encoded_in_base64> [--assetsHost=<scheme://host:port>] [--locale=be]
 ```
 
 Try `php example.php` for demo.

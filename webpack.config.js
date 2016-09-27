@@ -68,9 +68,9 @@ const webpackConfig = {
             },
             {
                 test: /\.(png|gif|jpg|svg)$/,
-                loader: 'url',
+                loader: 'file',
                 query: {
-                    name: 'assets/[name].[ext]?[hash]'
+                    name: 'assets/[name]-[folder].[ext]?[hash]'
                 }
             },
             {
