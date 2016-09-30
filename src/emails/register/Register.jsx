@@ -5,6 +5,7 @@ import { FormattedMessage as Message } from 'react-intl';
 import { Userbar } from 'components/userbar';
 import { Table } from 'components/table';
 import { Header } from 'components/header';
+import { Footer } from 'components/footer';
 import { Button } from 'components/button';
 import { Input } from 'components/input';
 import { BitmapText } from 'components/text';
@@ -162,25 +163,7 @@ export default function Register({username, link, code}) {
                 </Table>
             </div>
 
-            <Table style={styles.footer}>
-                <tr>
-                    <td style={styles.footerText}>
-                        <Message {...messages.footer} values={{
-                            serviceLink:
-                                <a href="https://account.ely.by" style={styles.footerLink}>
-                                    <Message {...messages.service_name} />
-                                </a>
-                        }} />
-                    </td>
-                    <td style={styles.footerLogo}>
-                        <a href="http://ely.by">
-                            <BitmapText message={messages.footer_logo_alt} style={{
-                                verticalAlign: 'middle'
-                            }} />
-                        </a>
-                    </td>
-                </tr>
-            </Table>
+            <Footer />
         </div>
     );
 }
