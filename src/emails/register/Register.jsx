@@ -4,6 +4,7 @@ import { FormattedMessage as Message } from 'react-intl';
 
 import { Userbar } from 'components/userbar';
 import { Table } from 'components/table';
+import { Header } from 'components/header';
 import { Button } from 'components/button';
 import { Input } from 'components/input';
 import { BitmapText } from 'components/text';
@@ -19,19 +20,12 @@ export default function Register({username, link, code}) {
     return (
         <div>
             <Userbar />
-            <Table style={styles.headerImage}>
-                <tr>
-                    <td style={styles.headerTextContainer}>
-                        <div style={styles.welcomeUsername}>
-                            <Message {...messages.hello_username} values={{username}} />
-                        </div>
 
-                        <BitmapText message={messages.welcome_image} style={{
-                            verticalAlign: 'middle'
-                        }} />
-                    </td>
-                </tr>
-            </Table>
+            <Header username={username} title={
+                <BitmapText message={messages.welcome_image} style={{
+                    verticalAlign: 'middle'
+                }} />
+            } />
 
             <div style={styles.content}>
                 <Table>

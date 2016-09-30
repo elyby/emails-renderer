@@ -1,19 +1,4 @@
-import background from './images/headerBackground.jpg';
-
 export default {
-    headerImage: {
-        height: '200px',
-        backgroundImage: `url(${background})`
-    },
-    headerTextContainer: {
-        color: '#fff',
-        textAlign: 'center',
-        verticalAlign: 'middle'
-    },
-    welcomeUsername: {
-        fontSize: '20px'
-    },
-
     content: {
         background: '#fff',
         padding: '50px',
