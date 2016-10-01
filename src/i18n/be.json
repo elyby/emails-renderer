@@ -1,18 +1,18 @@
 {
-    "emails.register.hello_username": "Прывітанне, {username}",
-    "emails.register.welcome_image": "Сардэчна запрашаем на Ely.by",
-    "emails.register.we_glad_to_see_you": "Мы рады бачыць цябе ў шэрагах карыстальнікаў праекту Ely.by. Ты ўжо амаль у мэты, засталося толькі пацвердзіць свой E‑mail адрас. Каб зрабіць гэта, калі ласка, націсні на кнопку, якая знаходзіцца ніжэй.",
-    "emails.register.confirm_email_image": "Пацвердзіць E‑mail",
-    "emails.register.or": "ці",
-    "emails.register.pass_code_in_field": "Пазнач гэты код у поле ўводу на сайце:",
-    "emails.register.whats_next_image": "Што далей?",
+    "components.footer.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе {serviceLink}. Калі гэта быў не ты, то проста выдалі гэты ліст.",
+    "components.footer.footer_logo_alt": "Ely.by - Альтэрнатыўныя сэрвісы Minecraft",
+    "components.footer.service_name": "Акаўнты Ely.by",
+    "components.header.hello_username": "Прывітанне, {username}",
     "emails.register.choose_you_skin_image": "Выберы свой скін",
     "emails.register.choose_you_skin_text": "У каталогу скіноў Ely.by ты зможаш знайсці мноства разнастайных скіноў, кожны з якіх гатовы да таго, каб быць надзетым.",
+    "emails.register.confirm_email_image": "Пацвердзіць E‑mail",
     "emails.register.install_our_patch_image": "Устанаві наш патч у гульню",
     "emails.register.install_our_patch_text": "Для таго, каб сістема скіноў Ely.by працавала, табе патрэбна ўстанавіць наш патч. Знайсці яго можна ў раздзеле загрузак на сайце.",
+    "emails.register.or": "ці",
+    "emails.register.pass_code_in_field": "Пазнач гэты код у поле ўводу на сайце:",
     "emails.register.use_tlauncher_image": "Выкарыстоўвай TLauncher",
     "emails.register.use_tlauncher_text": "Усё значна лягчэй, калі ты выкарыстоўваеш правільную прыладу для сваёй задачы. TLauncher з'яўляецца лепшым альтэрнатыўным лаунчарам для Minecraft, які таксама мае ўбудаваную падтрымку Ely.by.",
-    "emails.register.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе {serviceLink}. Калі гэта быў не ты, то проста выдалі гэты ліст.",
-    "emails.register.service_name": "Акаўнты Ely.by",
-    "emails.register.footer_logo_alt": "Ely.by - Альтэрнатыўныя сэрвісы Minecraft"
+    "emails.register.we_glad_to_see_you": "Мы рады бачыць цябе ў шэрагах карыстальнікаў праекту Ely.by. Ты ўжо амаль у мэты, засталося толькі пацвердзіць свой E‑mail адрас. Каб зрабіць гэта, калі ласка, націсні на кнопку, якая знаходзіцца ніжэй.",
+    "emails.register.welcome_image": "Сардэчна запрашаем на Ely.by",
+    "emails.register.whats_next_image": "Што далей?"
 }
