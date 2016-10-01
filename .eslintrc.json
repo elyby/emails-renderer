@@ -100,7 +100,7 @@
         "strict": ["warn", "never"], // babel все сделает за нас
 
         // variables
-        "no-catch-shadow": "error",
+        "no-catch-shadow": "off",
         "no-delete-var": "error",
         "no-label-var": "error",
         "no-shadow-restricted-names": "error",

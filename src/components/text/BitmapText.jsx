@@ -5,24 +5,34 @@ import { FormattedMessage as Message } from 'react-intl';
 export function BitmapText(props) {
     const parts = props.message.id.split('.');
 
-    if (parts[0] !== 'emails') {
-        throw new Error('Only src/emails subdirectories supported for now');
+    if (parts[0] !== 'emails' && parts[0] !== 'components') {
+        throw new Error('Only src/emails and src/components subdirectories supported for now');
     }
 
     if (parts.length !== 3) {
-        throw new Error('The message.id must be contain 3 parts separated by dots');
+        throw new Error('The message.id must contain 3 parts separated by dots');
     }
 
     let src;
     let size;
     try {
-        src = require(`emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
-        // TODO: we can improve this loader in future by adding an option to disable file emitting
-        // because this thing is handled by url-loader
-        size = require(`image-size!emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
-    } catch (err) { // fallback to default locale
-        src = require(`emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
-        size = require(`image-size!emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+        try {
+            src = require(`emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+            // TODO: we can improve this loader in future by adding an option to disable file emitting
+            // because this thing is handled by url-loader
+            size = require(`image-size!emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+        } catch (err) { // fallback to default locale
+            src = require(`emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+            size = require(`image-size!emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+        }
+    } catch (err) { // try components
+        try {
+            src = require(`components/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+            size = require(`image-size!components/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+        } catch (err) { // fallback to default locale
+            src = require(`components/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+            size = require(`image-size!components/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+        }
     }
 
     const width = props.retina ? size.width / 2 : size.width;
