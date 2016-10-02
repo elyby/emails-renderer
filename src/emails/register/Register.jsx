@@ -2,10 +2,8 @@ import { PropTypes } from 'react';
 
 import { FormattedMessage as Message } from 'react-intl';
 
-import { Userbar } from 'components/userbar';
+import { Userbar, Header, Footer } from 'components/layout';
 import { Table } from 'components/table';
-import { Header } from 'components/header';
-import { Footer } from 'components/footer';
 import { Button } from 'components/button';
 import { Input } from 'components/input';
 import { BitmapText } from 'components/text';
