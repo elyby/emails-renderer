@@ -1,6 +1,8 @@
+import {green} from 'components/ui/colors';
+
 export default {
     userbar: {
-        background: '#207E5C',
+        background: green.color,
         height: '50px'
     },
     marginColumn: {
@@ -11,7 +13,7 @@ export default {
         verticalAlign: 'middle'
     },
     logo: {
-        background: '#1A6449',
+        background: green.dark,
         padding: '0 13px',
         display: 'block',
         lineHeight: '50px'

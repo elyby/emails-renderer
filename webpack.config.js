@@ -4,6 +4,7 @@ const path = require('path');
 
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 
 const rootPath = path.resolve('./src');
 
@@ -95,7 +96,11 @@ const webpackConfig = {
 if (!isProduction) {
     webpackConfig.plugins.push(
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoErrorsPlugin(),
+        new CircularDependencyPlugin({
+            exclude: /node_modules/,
+            failOnError: true
+        })
     );
 }
 

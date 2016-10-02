@@ -1,5 +1,8 @@
+import {green} from 'components/ui/colors';
+
 export default {
     footer: {
+        borderTop: `10px solid ${green.color}`,
         background: '#DDD8CE',
         height: '135px'
     },

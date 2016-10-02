@@ -2,11 +2,11 @@ import { PropTypes } from 'react';
 
 import { FormattedMessage as Message } from 'react-intl';
 
-import { Userbar, Header, Footer } from 'components/layout';
+import { Userbar, Header, Content, Footer } from 'components/layout';
 import { Table } from 'components/table';
-import { Button } from 'components/button';
-import { Input } from 'components/input';
+import { blue } from 'components/ui/colors';
 import { BitmapText } from 'components/text';
+import { Code } from 'components/blocks';
 
 import styles from './styles';
 import messages from './messages.intl.json';
@@ -21,12 +21,10 @@ export default function Register({username, link, code}) {
             <Userbar />
 
             <Header username={username} title={
-                <BitmapText message={messages.welcome_image} style={{
-                    verticalAlign: 'middle'
-                }} />
+                <BitmapText message={messages.welcome_image} />
             } />
 
-            <div style={styles.content}>
+            <Content>
                 <Table>
                     <tr>
                         <td>
@@ -36,41 +34,10 @@ export default function Register({username, link, code}) {
                         </td>
                     </tr>
                     <tr>
-                        <td style={{
-                            ...styles.contentCenterCell,
-                            ...styles.confirmEmailCell
-                        }}>
-                            <a href={link}>
-                                <Button style={styles.confirmEmailButton}>
-                                    <BitmapText message={messages.confirm_email_image} style={{
-                                        verticalAlign: 'middle'
-                                    }} />
-                                </Button>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{
-                            ...styles.contentCenterCell,
-                            ...styles.orCell,
-                        }}>
-                            <Message {...messages.or} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{
-                            ...styles.contentCenterCell,
-                            ...styles.codeLabelCell
-                        }}>
-                            <Message {...messages.pass_code_in_field} />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style={{
-                            ...styles.contentCenterCell,
-                            ...styles.codeCell
-                        }}>
-                            <Input>{code}</Input>
+                        <td>
+                            <Code code={code} link={link} color={blue} label={
+                                <BitmapText message={messages.confirm_email_image} />
+                            } />
                         </td>
                     </tr>
                     <tr>
@@ -78,9 +45,7 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.whatsNextText
                         }}>
-                            <BitmapText message={messages.whats_next_image} style={{
-                                verticalAlign: 'middle'
-                            }} />
+                            <BitmapText message={messages.whats_next_image} />
                         </td>
                     </tr>
                     <tr>
@@ -94,9 +59,7 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.choose_you_skin_image} style={{
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        <BitmapText message={messages.choose_you_skin_image} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -119,9 +82,7 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.install_our_patch_image} style={{
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        <BitmapText message={messages.install_our_patch_image} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -144,9 +105,7 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.use_tlauncher_image} style={{
-                                            verticalAlign: 'middle'
-                                        }} />
+                                        <BitmapText message={messages.use_tlauncher_image} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -159,7 +118,7 @@ export default function Register({username, link, code}) {
                         </td>
                     </tr>
                 </Table>
-            </div>
+            </Content>
 
             <Footer />
         </div>

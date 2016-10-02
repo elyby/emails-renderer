@@ -61,7 +61,9 @@ BitmapText.propTypes = {
 
 BitmapText.defaultProps = {
     retina: true,
-    style: {}
+    style: {
+        verticalAlign: 'middle'
+    }
 };
 
 import { injectIntl, intlShape } from 'react-intl';

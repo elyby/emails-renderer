@@ -21,9 +21,7 @@ export default function Footer() {
                 </td>
                 <td style={styles.footerLogo}>
                     <a href="http://ely.by">
-                        <BitmapText message={messages.footer_logo_alt} style={{
-                            verticalAlign: 'middle'
-                        }} />
+                        <BitmapText message={messages.footer_logo_alt} />
                     </a>
                 </td>
             </tr>
