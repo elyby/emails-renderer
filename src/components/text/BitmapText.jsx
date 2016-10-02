@@ -9,29 +9,28 @@ export function BitmapText(props) {
         throw new Error('Only src/emails and src/components subdirectories supported for now');
     }
 
-    if (parts.length !== 3) {
-        throw new Error('The message.id must contain 3 parts separated by dots');
-    }
+    const fileName = parts.pop();
+    const componentPath = parts.slice(1).join('/');
 
     let src;
     let size;
     try {
         try {
-            src = require(`emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+            src = require(`emails/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
             // TODO: we can improve this loader in future by adding an option to disable file emitting
             // because this thing is handled by url-loader
-            size = require(`image-size!emails/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+            size = require(`image-size!emails/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
         } catch (err) { // fallback to default locale
-            src = require(`emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
-            size = require(`image-size!emails/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+            src = require(`emails/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
+            size = require(`image-size!emails/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
         }
     } catch (err) { // try components
         try {
-            src = require(`components/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
-            size = require(`image-size!components/${parts[1]}/images/${props.intl.locale}/${parts[2]}.png`);
+            src = require(`components/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
+            size = require(`image-size!components/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
         } catch (err) { // fallback to default locale
-            src = require(`components/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
-            size = require(`image-size!components/${parts[1]}/images/${props.intl.defaultLocale}/${parts[2]}.png`);
+            src = require(`components/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
+            size = require(`image-size!components/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
         }
     }
 
