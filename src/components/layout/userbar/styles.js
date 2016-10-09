@@ -10,10 +10,10 @@ export default {
     },
     logoColumn: {
         width: '1%',
-        verticalAlign: 'middle'
+        verticalAlign: 'middle',
+        background: green.dark
     },
     logo: {
-        background: green.dark,
         padding: '0 13px',
         display: 'block',
         lineHeight: '50px'
