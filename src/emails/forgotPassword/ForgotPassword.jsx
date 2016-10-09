@@ -17,7 +17,7 @@ export default function ForgotPassword({username, link, code}) {
             <Userbar />
 
             <Header username={username} title={
-                <BitmapText message={messages.forget_the_password_image} />
+                <BitmapText message={messages.forgot_the_password_image} />
             } />
 
             <Content>

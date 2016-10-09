@@ -6,7 +6,7 @@
     "components.layout.footer.service_name": "Акаунти Ely.by",
     "components.layout.header.hello_username": "Привіт, {username}",
     "emails.forgotPassword.continue_image": "Продовжити",
-    "emails.forgotPassword.forget_the_password_image": "Ти забув пароль?",
+    "emails.forgotPassword.forgot_the_password_image": "Ти забув пароль?",
     "emails.forgotPassword.shit_happens": "Таке трапляється, це нормально. Щоб продовжити процедуру відновлення паролю, тобі потрібно ввести спеціальний код в поле на сайті. Якщо запит на відновлення паролю відправив не ти, то, будь ласка, просто не реагуй на цей лист - зловмисники не зможуть вкрасти твій аккаунт без коду нижче.",
     "emails.register.choose_you_skin_image": "Обери свій скін",
     "emails.register.choose_you_skin_text": "В каталозі скінів Ely.by ти зможеш знайти безліч різноманітних скінів, кожен з яких готовий до того, щоб бути надягнутим.",
