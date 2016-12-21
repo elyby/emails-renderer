@@ -2,14 +2,16 @@ import { PropTypes } from 'react';
 
 import { IntlProvider, addLocaleData } from 'react-intl';
 
+import beLocaleData from 'react-intl/locale-data/be';
 import enLocaleData from 'react-intl/locale-data/en';
 import ruLocaleData from 'react-intl/locale-data/ru';
-import beLocaleData from 'react-intl/locale-data/be';
+import ptLocaleData from 'react-intl/locale-data/pt';
 import ukLocaleData from 'react-intl/locale-data/uk';
 
+addLocaleData(beLocaleData);
 addLocaleData(enLocaleData);
 addLocaleData(ruLocaleData);
-addLocaleData(beLocaleData);
+addLocaleData(ptLocaleData);
 addLocaleData(ukLocaleData);
 
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './constants';

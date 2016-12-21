@@ -1,0 +1,21 @@
+{
+    "components.layout.header.hello_username": "Ol\u00e1, {username}",
+    "components.layout.footer.footer_logo_alt": "Ely.by - Servi\u00e7o de Minecraft alternativo",
+    "emails.forgotPassword.forgot_the_password_image": "Esqueceu a senha?",
+    "components.layout.footer.footer": "Voc\u00ea recebeu essa mensagem porque este E-mail foi digitado durante o registro no servi\u00e7o {serviceLink}. Se n\u00e3o foi voc\u00ea, apenas ignore esta mensagem.",
+    "emails.forgotPassword.continue_image": "Continuar",
+    "emails.forgotPassword.shit_happens": "Ops, isso acontece. Se voc\u00ea deseja continuar a altera\u00e7\u00e3o da senha, voc\u00ea deve colocar o c\u00f3digo no site. Se voc\u00ea n\u00e3o pediu por uma recupera\u00e7\u00e3o da senha, apenas ignore esse E-mail. Sem esse c\u00f3digo, ningu\u00e9m poder\u00e1 roubar sua senha.",
+    "components.blocks.code.or": "ou",
+    "components.layout.footer.service_name": "Contas Ely.by",
+    "components.blocks.code.pass_code_in_field": "Insira esse c\u00f3digo no campo de formul\u00e1rio do nosso site:",
+    "emails.register.choose_you_skin_image": "Escolha sua skin",
+    "emails.register.choose_you_skin_text": "No cat\u00e1logo do Ely.by voc\u00ea pode encontrar uma grande diversidade de skins, que est\u00e3o prontas.",
+    "emails.register.welcome_image": "Bem-vindo ao Ely.by",
+    "emails.register.install_our_patch_text": "Voc\u00ea deve instalar o nosso patch para fazer o sistema de skins Ely.by funcionar. Voc\u00ea pode encontr\u00e1-lo na se\u00e7\u00e3o 'carregar' no nosso site.",
+    "emails.register.install_our_patch_image": "Instale nosso patch no jogo",
+    "emails.register.we_glad_to_see_you": "Estamos felizes de ver voc\u00ea entre os usu\u00e1rios do Ely.by. Voc\u00ea est\u00e1 quase no final, falta apenas confirmar o endere\u00e7o de E-mail. Por favor, aperte o bot\u00e3o abaixo para continuar.",
+    "emails.register.confirm_email_image": "Confirmar E-mail",
+    "emails.register.use_tlauncher_text": "\u00c9 muito f\u00e1cil quando voc\u00ea usa a ferramenta correta para o motivo correto. O TLauncher \u00e9 uma das melhores alternativas de launchers para Minecraft, e tamb\u00e9m tem o suporte do sistema Ely.by.",
+    "emails.register.whats_next_image": "O que \u00e9 o pr\u00f3ximo a se fazer?",
+    "emails.register.use_tlauncher_image": "Use o TLauncher"
+}

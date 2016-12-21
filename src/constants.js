@@ -1,2 +1,2 @@
-export const SUPPORTED_LANGUAGES = ['ru', 'en', 'be', 'uk'];
+export const SUPPORTED_LANGUAGES = ['be', 'en', 'ru', 'pt', 'uk'];
 export const DEFAULT_LANGUAGE = 'en';
