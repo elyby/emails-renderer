@@ -12,7 +12,8 @@ export default {
         paddingTop: '5px'
     },
     codeLabel: {
-        paddingTop: '1px'
+        paddingTop: '1px',
+        fontSize: '16px'
     },
     code: {
         paddingTop: '5px'
