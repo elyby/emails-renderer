@@ -1,0 +1,22 @@
+{
+    "be": {
+        "name": "Беларуская",
+        "progress": 100
+    },
+    "en": {
+        "name": "English",
+        "progress": 100
+    },
+    "pt": {
+        "name": "Português",
+        "progress": 100
+    },
+    "ru": {
+        "name": "Русский",
+        "progress": 100
+    },
+    "uk": {
+        "name": "Українська",
+        "progress": 100
+    }
+}

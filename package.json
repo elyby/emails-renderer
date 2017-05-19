@@ -18,7 +18,8 @@
     "start": "rm -rf dist/ && webpack-dev-server --progress --colors",
     "lint": "eslint ./src",
     "i18n": "cd ./scripts && ../node_modules/.bin/babel-node i18n-collect.js",
-    "build": "rm -rf dist/ && NODE_ENV=production webpack --progress --colors"
+    "build": "rm -rf dist/ && NODE_ENV=production webpack --progress --colors",
+    "i18n:pull": "cd ./scripts && ../node_modules/.bin/babel-node --presets es2015,stage-0 i18n-onesky.js pull"
   },
   "dependencies": {
     "babel-polyfill": "^6.3.14",
@@ -32,6 +33,7 @@
     "react-intl": "^2.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.0.0",
     "babel-eslint": "^6.0.0",
     "babel-loader": "^6.0.0",
