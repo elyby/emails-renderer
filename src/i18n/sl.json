@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "ali",
+    "components.blocks.code.pass_code_in_field": "Vnesi to kodo v polje na naši spletni strani:",
+    "components.layout.footer.footer": "To sporočilo ste prejeli, ker je bil ta E-mail vnesen med registracijo {serviceLink} storitve. Če to niste bili vi, prosim ignorirajte to sporočilo.",
+    "components.layout.footer.footer_logo_alt": "Ely.by - Alternativne storitve za Minecraft",
+    "components.layout.footer.service_name": "Računi Ely.by",
+    "components.layout.header.hello_username": "Pozdravljen, {username}",
+    "emails.forgotPassword.continue_image": "Nadaljuj",
+    "emails.forgotPassword.forgot_the_password_image": "Pozabljeno geslo?",
+    "emails.forgotPassword.shit_happens": "Ups, toda tudi to se zgodi. Če želiš nadaljevati s spremembo gesla, moraš vnesti podano kodo na spletno stran. Če nisi zahteval obnovitve gesla, ignoriraj ta email. Brez te kode nihče ne bo mogel ukrasti tvojega gesla.",
+    "emails.register.choose_you_skin_image": "Izberi svoj skin",
+    "emails.register.choose_you_skin_text": "V katalogu Ely.by lahko najdeš na tone skinov, ki so že pripravljeni, da jih poskusiš.",
+    "emails.register.confirm_email_image": "Potrdi E-mail",
+    "emails.register.install_our_patch_image": "Namesti maš dodatek v igro",
+    "emails.register.install_our_patch_text": "Če hočeš, da sistem za skin deluje, moraš namestiti dodatek Ely.by. Najdeš ga lahko na poglavju 'Naloži' na naši strani.",
+    "emails.register.use_tlauncher_image": "Uporabi TLauncher",
+    "emails.register.use_tlauncher_text": "Veliko lažje je, če uporabljaš prava orodja za prave stvari. TLauncher je eden najboljših alternativnih zaganjalnikov za igro Minecraft. Kar je še bolje, pa je, da podpira Ely.by skin sistem.",
+    "emails.register.we_glad_to_see_you": "Srečni smo, da te lahko najdemo med uporabniki Ely.by. Edino, kar ti preostane do tvojega računa je potrditev E-maila. Prosim pritisni gumb spodaj za nadaljevanje.",
+    "emails.register.welcome_image": "Dobrodošel na Ely.by",
+    "emails.register.whats_next_image": "Kaj sledi?"
+}

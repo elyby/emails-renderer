@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "atau",
+    "components.blocks.code.pass_code_in_field": "Masukkan kode ini kedalam bagian formulir situs kami:",
+    "components.layout.footer.footer": "You have received this message, because this E‑mail was entered during registration at the {serviceLink} service. If that wasn't you, please just ignore this message.",
+    "components.layout.footer.footer_logo_alt": "Ely.by - Layanan Minecraft Alternatif",
+    "components.layout.footer.service_name": "Akun Ely.by",
+    "components.layout.header.hello_username": "Halo, {username}",
+    "emails.forgotPassword.continue_image": "Lanjutkan",
+    "emails.forgotPassword.forgot_the_password_image": "Lupa sandi?",
+    "emails.forgotPassword.shit_happens": "Ups, ini terjadi. Jika Anda ingin terus mengganti kata sandinya, Anda harus memasukkan kode berikut di situs web. Jika Anda belum meminta pemulihan kata sandi, abaikan saja email ini. Tanpa kode ini tidak ada yang bisa mencuri password anda.",
+    "emails.register.choose_you_skin_image": "Pilih kulitmu",
+    "emails.register.choose_you_skin_text": "Di catalog Ely.by anda bisa menemukan banyak kulit yang beragam, yang sudah siap pakai.",
+    "emails.register.confirm_email_image": "Konfirmasi E-mail",
+    "emails.register.install_our_patch_image": "Pasang patch kami didalam game",
+    "emails.register.install_our_patch_text": "You should install our patch to make the Ely.by's skin system working. You can find it in 'Load' section on our site.",
+    "emails.register.use_tlauncher_image": "Gunakan TLauncher",
+    "emails.register.use_tlauncher_text": "Akan jauhlebih mudah saat anda menggunakan alat yang benar untuk tujuan yang benar. TLauncher adalah salah satu dari peluncur Minecraft alternatif terbaik, yang juga memiliki dukungan sistem Ely.by.",
+    "emails.register.we_glad_to_see_you": "We glad to see you among the users of Ely.by. You almost reached the final point, it remains only to confirm your E-mail address. Please push the button bellow to continue.",
+    "emails.register.welcome_image": "Selamat datang di Ely.by",
+    "emails.register.whats_next_image": "Selanjutnya apa?"
+}
