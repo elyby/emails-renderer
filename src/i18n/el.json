@@ -2,7 +2,7 @@
     "components.blocks.code.or": "ή",
     "components.blocks.code.pass_code_in_field": "Πληκτρολογήστε αυτόν το κωδικό στο κενό στην ιστοσελίδα:",
     "components.layout.footer.footer": "Λάβατε αυτό το μήνυμα, γιατί αυτό το E‑mail είχε εισαχθεί για την δημιουργία λογαριασμού στην υπηρεσία {serviceLink}. Αν δεν ήσασταν εσείς παρακαλώ αγνοείστε αυτό το μήνυμα.",
-    "components.layout.footer.footer_logo_alt": "Ely.by είναι μία διαφορετική υπηρεσία για το Minecraft",
+    "components.layout.footer.footer_logo_alt": "Ely.by - Alternative Minecraft services",
     "components.layout.footer.service_name": "Λογαριασμός Ely.by",
     "components.layout.header.hello_username": "Για {username}",
     "emails.forgotPassword.continue_image": "Συνέχεια",
