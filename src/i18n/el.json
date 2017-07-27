@@ -4,7 +4,7 @@
     "components.layout.footer.footer": "Λάβατε αυτό το μήνυμα, γιατί αυτό το E‑mail είχε εισαχθεί για την δημιουργία λογαριασμού στην υπηρεσία {serviceLink}. Αν δεν ήσασταν εσείς παρακαλώ αγνοείστε αυτό το μήνυμα.",
     "components.layout.footer.footer_logo_alt": "Ely.by - Alternative Minecraft services",
     "components.layout.footer.service_name": "Λογαριασμός Ely.by",
-    "components.layout.header.hello_username": "Για {username}",
+    "components.layout.header.hello_username": "Γεια {username}",
     "emails.forgotPassword.continue_image": "Συνέχεια",
     "emails.forgotPassword.forgot_the_password_image": "Ξεχάσατε τον κωδικό σας;",
     "emails.forgotPassword.shit_happens": "Αν θέλεις να συνεχίσεις με την αλλαγή του κωδικού θα χρειαστεί να πληκτρολογήσεις αυτόν τον κωδικό στην ιστοσελίδα. Αν δεν έχεις ζητήσει  αλλαγή κωδικού απλά αγνόησε αυτό το email. Χωρίς αυτόν τον κωδικό δεν μπορεί κανένας να σου κλέψει τον λογαριασμό.",
