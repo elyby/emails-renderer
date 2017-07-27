@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "ou",
+    "components.blocks.code.pass_code_in_field": "Insérez ce code dans le champ de formulaire de notre site:",
+    "components.layout.footer.footer": "Vous avez reçu ce message, car cet e-mail a été saisi lors de l'inscription au service des {serviceLink}. Si ce n'était pas vous, ignorez ce message.",
+    "components.layout.footer.footer_logo_alt": "Ely.by - Services alternatifs de Minecraft",
+    "components.layout.footer.service_name": "Comptes Ely.by",
+    "components.layout.header.hello_username": "Bonjour {username},",
+    "emails.forgotPassword.continue_image": "Continuer",
+    "emails.forgotPassword.forgot_the_password_image": "Mot de passe oublié?",
+    "emails.forgotPassword.shit_happens": "Oups, cela se produit. Si vous souhaitez continuer à modifier le mot de passe, vous devez entrer le code suivant sur notre site. Si vous n'avez pas demandé de récupération de mot de passe, ignorez ce courriel. Sans ce code, personne ne pourra voler votre mot de passe.",
+    "emails.register.choose_you_skin_image": "Choisissez votre skin",
+    "emails.register.choose_you_skin_text": "Dans le catalogue d'Ely.by, vous pouvez trouver une grande variété de skins, qui sont prêts à être porter.",
+    "emails.register.confirm_email_image": "Confirmez votre E-mail",
+    "emails.register.install_our_patch_image": "Installez notre application dans le jeu",
+    "emails.register.install_our_patch_text": "Vous devrez installer notre application pour faire fonctionner le système de skin Ely.by. Vous pouvez le trouver dans la section 'Télécharger' sur notre site.",
+    "emails.register.use_tlauncher_image": "Utiliser TLauncher",
+    "emails.register.use_tlauncher_text": "C'est beaucoup plus facile, lorsque vous utilisez l'outil approprié pour le bon but. TLauncher est l'un des meilleurs launchers pour Minecraft, qui dispose également du support de notre système de skins Ely.by.",
+    "emails.register.we_glad_to_see_you": "Nous sommes heureux de vous voir parmi les utilisateurs de Ely.by. Vous avez presque atteint le dernier point, il ne vous reste qu'à confirmer votre adresse E-mail. Appuyez sur le bouton ci-dessous pour continuer.",
+    "emails.register.welcome_image": "Bienvenue sur Ely.by",
+    "emails.register.whats_next_image": "C'est quoi après?"
+}
