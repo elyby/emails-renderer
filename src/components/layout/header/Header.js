@@ -1,9 +1,10 @@
-import { Table } from 'components/table';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage as Message } from 'react-intl';
-import { PropTypes } from 'react';
+
+import { Table } from 'components/table';
 
 import styles from './styles';
-
 import messages from './messages.intl.json';
 
 export default function Userbar({username, title}) {

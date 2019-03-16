@@ -1,5 +1,5 @@
-import { PropTypes } from 'react';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage as Message } from 'react-intl';
 
 import { Userbar, Header, Content, Footer } from 'components/layout';

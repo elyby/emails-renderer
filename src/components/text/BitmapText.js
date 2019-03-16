@@ -1,5 +1,5 @@
-import { PropTypes } from 'react';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage as Message } from 'react-intl';
 
 export function BitmapText(props) {
@@ -19,18 +19,18 @@ export function BitmapText(props) {
             src = require(`emails/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
             // TODO: we can improve this loader in future by adding an option to disable file emitting
             // because this thing is handled by url-loader
-            size = require(`image-size!emails/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
+            size = require(`image-size-loader!emails/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
         } catch (err) { // fallback to default locale
             src = require(`emails/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
-            size = require(`image-size!emails/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
+            size = require(`image-size-loader!emails/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
         }
     } catch (err) { // try components
         try {
             src = require(`components/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
-            size = require(`image-size!components/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
+            size = require(`image-size-loader!components/${componentPath}/images/${props.intl.locale}/${fileName}.png`);
         } catch (err) { // fallback to default locale
             src = require(`components/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
-            size = require(`image-size!components/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
+            size = require(`image-size-loader!components/${componentPath}/images/${props.intl.defaultLocale}/${fileName}.png`);
         }
     }
 

@@ -1,18 +1,18 @@
-import { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { colors, green } from 'components/ui/colors';
 
 import styles from './styles';
 
 export default class Input extends Component {
-
     static propTypes = {
         value: PropTypes.string.isRequired,
-        color: PropTypes.oneOf(Object.values(colors))
+        color: PropTypes.oneOf(Object.values(colors)),
     };
 
     static defaultProps = {
-        color: green
+        color: green,
     };
 
     render() {
@@ -29,5 +29,4 @@ export default class Input extends Component {
             </div>
         );
     }
-
 }

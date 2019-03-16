@@ -1,4 +1,5 @@
-import { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import { FormattedMessage as Message } from 'react-intl';
 
@@ -6,7 +7,6 @@ import { colors, green } from 'components/ui/colors';
 import { Button, Input } from 'components/ui';
 
 import styles from './styles';
-
 import messages from './messages.intl.json';
 
 export default function Code({code, link, label, color = green}) {

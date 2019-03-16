@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { Table } from 'components/table';
 
 import styles from './styles';
-
 import logoImage from './logo.png';
 
 export default function Userbar() {

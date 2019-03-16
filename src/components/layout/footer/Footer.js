@@ -1,10 +1,10 @@
-import { Table } from 'components/table';
+import React from 'react';
 import { FormattedMessage as Message } from 'react-intl';
 
+import { Table } from 'components/table';
 import { BitmapText } from 'components/text';
 
 import styles from './styles';
-
 import messages from './messages.intl.json';
 
 export default function Footer() {

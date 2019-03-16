@@ -1,4 +1,5 @@
-import { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import { IntlProvider, addLocaleData } from 'react-intl';
 
@@ -32,12 +33,12 @@ addLocaleData(ptLocaleData);
 addLocaleData(ukLocaleData);
 addLocaleData(viLocaleData);
 
-import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './constants';
+import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './params';
 
 import BaseLayout from 'components/BaseLayout';
 
 export default function App({type, payload = {}}) {
-    let {locale} = payload;
+    let { locale } = payload;
 
     if (!locale || SUPPORTED_LANGUAGES.indexOf(locale) === -1) {
         locale = DEFAULT_LANGUAGE;
@@ -58,6 +59,6 @@ export default function App({type, payload = {}}) {
 App.propTypes = {
     type: PropTypes.string.isRequired,
     payload: PropTypes.shape({
-        locale: PropTypes.string
-    })
+        locale: PropTypes.string,
+    }),
 };

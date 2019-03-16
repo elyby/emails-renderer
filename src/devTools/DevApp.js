@@ -1,19 +1,19 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 import App from 'App';
 
 import List from './List';
 
-import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from 'constants';
+import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from 'params';
 
-const EVAILABLE_EMAILS = require.context('emails', true, /index\.js$/).keys().map((path) => path.split('/')[1]);
+const AVAILABLE_EMAILS = require.context('emails', true, /index\.js$/).keys().map((path) => path.split('/')[1]);
 
 export default class DevApp extends Component {
     state = {
         locale: DEFAULT_LANGUAGE,
-        type: EVAILABLE_EMAILS[0],
+        type: AVAILABLE_EMAILS[0],
         fixture: 'default',
-        isMinimized: false
+        isMinimized: false,
     };
 
     componentWillMount() {
@@ -63,7 +63,7 @@ export default class DevApp extends Component {
                         />
 
                         <List label="Email"
-                            items={EVAILABLE_EMAILS}
+                            items={AVAILABLE_EMAILS}
                             active={type}
                             onChange={this.onTypeChange}
                         />

@@ -1,14 +1,19 @@
+/* eslint-env node */
 /* eslint-disable no-console */
 import fs from 'fs';
-import {sync as globSync} from 'glob';
-import {sync as mkdirpSync} from 'mkdirp';
+import path from 'path';
+import glob from 'glob';
+import mkdirp from 'mkdirp';
 import chalk from 'chalk';
 import prompt from 'prompt';
 
-const MESSAGES_PATTERN = '../dist/messages/**/*.json';
-const LANG_DIR = '../src/i18n';
+// https://stackoverflow.com/a/50052194/5184751
+const __dirname = path.dirname(new URL(import.meta.url).pathname); // eslint-disable-line
+
+const MESSAGES_PATTERN = path.resolve(__dirname, '../dist/messages/**/*.json');
+const LANG_DIR = path.resolve(__dirname, '../src/i18n');
 const DEFAULT_LOCALE = 'en';
-const SUPPORTED_LANGS = [DEFAULT_LOCALE].concat('ru', 'be', 'uk');
+const SUPPORTED_LANGS = Object.keys(JSON.parse(fs.readFileSync(path.join(LANG_DIR, 'index.json'))));
 
 /**
  * Aggregates the default messages that were extracted from the app's
@@ -18,7 +23,7 @@ const SUPPORTED_LANGS = [DEFAULT_LOCALE].concat('ru', 'be', 'uk');
  */
 let idToFileMap = {};
 let duplicateIds = [];
-const collectedMessages = globSync(MESSAGES_PATTERN)
+const collectedMessages = glob.sync(MESSAGES_PATTERN)
     .map((filename) => [filename, JSON.parse(fs.readFileSync(filename, 'utf8'))])
     .reduce((collection, [file, descriptors]) => {
         descriptors.forEach(({id, defaultMessage}) => {
@@ -37,7 +42,8 @@ if (duplicateIds.length) {
     console.log('\nFound duplicated ids:');
     duplicateIds.forEach((id) => console.log(`${chalk.yellow(id)}:\n - ${idToFileMap[id].join('\n - ')}\n`));
     console.log(chalk.red('Please correct the errors above to proceed further!'));
-    return;
+
+    process.exit(0);
 }
 
 duplicateIds = null;
@@ -83,7 +89,8 @@ keysToUpdate = Object.entries(prevMessages).reduce((acc, [key, message]) =>
 });
 
 if (!keysToAdd.length && !keysToRemove.length && !keysToUpdate.length && !keysToRename.length) {
-    return console.log(chalk.green('Everything is up to date!'));
+    console.log(chalk.green('Everything is up to date!'));
+    process.exit();
 }
 
 console.log(chalk.magenta(`The diff relative to default locale (${DEFAULT_LOCALE}) is:`));
@@ -135,7 +142,7 @@ prompt.get({
 
 
 function buildLocales() {
-    mkdirpSync(LANG_DIR);
+    mkdirp.sync(LANG_DIR);
 
     SUPPORTED_LANGS.map((lang) => {
         const destPath = `${LANG_DIR}/${lang}.json`;
