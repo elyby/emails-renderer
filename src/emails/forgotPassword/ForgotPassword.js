@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage as Message } from 'react-intl';
+import { FormattedMessage as Message, FormattedHTMLMessage as HTMLMessage } from 'react-intl';
 
 import { Userbar, Header, Content, Footer } from 'components/layout';
 import { Table } from 'components/table';
 import { Code } from 'components/blocks';
-import { BitmapText } from 'components/text';
 import { lightViolet } from 'components/ui/colors';
 
 import styles from './styles';
@@ -17,7 +16,7 @@ export default function ForgotPassword({username, link, code}) {
             <Userbar />
 
             <Header username={username} title={
-                <BitmapText message={messages.forgot_the_password_image} />
+                <HTMLMessage {...messages.forgot_the_password_image}/>
             } />
 
             <Content>
@@ -32,7 +31,7 @@ export default function ForgotPassword({username, link, code}) {
                     <tr>
                         <td>
                             <Code code={code} link={link} color={lightViolet} label={
-                                <BitmapText message={messages.continue_image} />
+                                <HTMLMessage {...messages.continue_image} />
                             } />
                         </td>
                     </tr>

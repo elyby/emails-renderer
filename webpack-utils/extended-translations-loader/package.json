@@ -1,0 +1,13 @@
+{
+    "name": "extended-translations-loader",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "@lesechos/image-size-loader": "file:./../image-size-loader",
+        "glob": "^7.1.4",
+        "loader-utils": "^1.2.3",
+        "text2png-loader": "file:./../text2png-loader",
+        "tmp": "^0.0.33",
+        "qs": "^6.0.0"
+    }
+}

@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormattedMessage as Message } from 'react-intl';
+import { FormattedMessage as Message, FormattedHTMLMessage as HTMLMessage } from 'react-intl';
 
 import { Userbar, Header, Content, Footer } from 'components/layout';
 import { Table } from 'components/table';
 import { blue } from 'components/ui/colors';
-import { BitmapText } from 'components/text';
 import { Code } from 'components/blocks';
 
 import styles from './styles';
@@ -21,7 +20,7 @@ export default function Register({username, link, code}) {
             <Userbar />
 
             <Header username={username} title={
-                <BitmapText message={messages.welcome_image} />
+                <HTMLMessage {...messages.welcome_image} />
             } />
 
             <Content>
@@ -36,7 +35,7 @@ export default function Register({username, link, code}) {
                     <tr>
                         <td>
                             <Code code={code} link={link} color={blue} label={
-                                <BitmapText message={messages.confirm_email_image} />
+                                <HTMLMessage {...messages.confirm_email_image} />
                             } />
                         </td>
                     </tr>
@@ -45,7 +44,7 @@ export default function Register({username, link, code}) {
                             ...styles.contentCenterCell,
                             ...styles.whatsNextText
                         }}>
-                            <BitmapText message={messages.whats_next_image} />
+                            <HTMLMessage {...messages.whats_next_image} />
                         </td>
                     </tr>
                     <tr>
@@ -59,7 +58,7 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.choose_you_skin_image} />
+                                        <HTMLMessage {...messages.choose_you_skin_image} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -82,7 +81,7 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.install_our_patch_image} />
+                                        <HTMLMessage {...messages.install_our_patch_image} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
@@ -105,12 +104,12 @@ export default function Register({username, link, code}) {
                                         }} />
                                     </td>
                                     <td style={styles.todoItemContent}>
-                                        <BitmapText message={messages.use_tlauncher_image} />
+                                        <HTMLMessage {...messages.useTLLauncher} />
                                         <div style={{
                                             ...styles.paragraph,
                                             ...styles.todoItemText
                                         }}>
-                                            <Message {...messages.use_tlauncher_text} />
+                                            <Message {...messages.useTLLauncherText} />
                                         </div>
                                     </td>
                                 </tr>

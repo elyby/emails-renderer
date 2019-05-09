@@ -2,7 +2,10 @@
 
 const path = require('path');
 
+const { ContextReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const SUPPORTED_LANGUAGES = Object.keys(require('./src/i18n/index.json'));
 
 module.exports = (env, { mode = 'development' }) => {
     const isProduction = mode === 'production';
@@ -33,7 +36,7 @@ module.exports = (env, { mode = 'development' }) => {
 
         resolveLoader: {
             alias: {
-                'image-size-loader': path.join(__dirname, 'node_modules/@eoleo/image-size-loader/dist/cjs.js'),
+                'image-size-loader': path.join(__dirname, 'node_modules/@lesechos/image-size-loader/index.js'),
             },
         },
 
@@ -46,6 +49,9 @@ module.exports = (env, { mode = 'development' }) => {
         },
 
         plugins: [
+            new ContextReplacementPlugin(
+                /i18n/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.json`)
+            ),
             new HtmlWebpackPlugin({
                 template: 'src/index.ejs',
                 favicon: 'src/favicon.ico',
@@ -87,11 +93,6 @@ module.exports = (env, { mode = 'development' }) => {
                                 plugins: [
                                     '@babel/plugin-proposal-class-properties',
                                     '@babel/plugin-proposal-export-default-from',
-                                    // TODO: by unknown reasons react-intl plugins isn't working.
-                                    //       investigate later
-                                    ['react-intl', {
-                                        messagesDir: path.join(__dirname, 'dist/messages/'),
-                                    }],
                                 ],
                             },
                         },
@@ -104,12 +105,20 @@ module.exports = (env, { mode = 'development' }) => {
                         name: 'assets/[name]-[folder].[ext]?[hash]',
                     },
                 },
+                // The explicit declaration of the json loader allows us to disable the built-in
+                // webpack 4 loader for json, which interferes with the work of text2png-loader
+                {
+                    test: /\.json$/,
+                    exclude: /\.intl\.json$/,
+                    loader: 'json-loader',
+                    type: 'javascript/auto',
+                },
                 {
                     test: /\.intl\.json$/,
                     loader: 'intl-json-loader',
                     type: 'javascript/auto',
                 },
-            ]
+            ],
         },
     };
 };

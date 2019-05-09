@@ -1,12 +1,42 @@
 {
-    "welcome_image": "Welcome to Ely.by",
-    "we_glad_to_see_you": "We glad to see you among the users of Ely.by. You almost reached the final point, it remains only to confirm your E-mail address.For doing it, please push a button under the text.",
-    "confirm_email_image": "Confirm E‑mail",
-    "whats_next_image": "What's the next?",
-    "choose_you_skin_image": "Choose your skin",
+    "welcome_image": {
+        "type": "text2png",
+        "defaultMessage": "Welcome to Ely.by",
+        "size": 32,
+        "color": "#fff"
+    },
+    "we_glad_to_see_you": "We glad to see you among the users of Ely.by. You almost reached the final point, it remains only to confirm your E-mail address. Please push the button bellow to continue.",
+    "confirm_email_image": {
+        "type": "text2png",
+        "defaultMessage": "Confirm E‑mail",
+        "size": 18,
+        "color": "#fff"
+    },
+    "whats_next_image": {
+        "type": "text2png",
+        "defaultMessage": "What's the next?",
+        "size": 32,
+        "color": "#444"
+    },
+    "choose_you_skin_image": {
+        "type": "text2png",
+        "defaultMessage": "Choose your skin",
+        "size": 24,
+        "color": "#6b5a8d"
+    },
     "choose_you_skin_text": "In Ely.by's catalog you can find great diversity of skins, which are ready to be put up.",
-    "install_our_patch_image": "Install our patch in the game",
-    "install_our_patch_text": "You should install our patch to make the Ely.by's skin system working. You can find it at 'Load' section.",
-    "use_tlauncher_image": "Use TLauncher",
-    "use_tlauncher_text": "It is much easier, when you use right tool for right purpose. TLauncher is one of the best alternative launchers for the Minecraft, that also has installed Ely.by's support system."
+    "install_our_patch_image": {
+        "type": "text2png",
+        "defaultMessage": "Install our patch in the game",
+        "size": 24,
+        "color": "#df864a"
+    },
+    "install_our_patch_text": "You should install our patch to make the Ely.by's skin system working. You can find it in 'Load' section on our site.",
+    "useTLLauncher": {
+        "type": "text2png",
+        "defaultMessage": "Use TL launcher",
+        "size": 24,
+        "color": "#28555b"
+    },
+    "useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support."
 }

@@ -44,8 +44,8 @@ export default function App({type, payload = {}}) {
         locale = DEFAULT_LANGUAGE;
     }
 
-    const messages = require(`i18n/${locale}.json`);
-    const Email = require(`emails/${type}/index`).default;
+    const { default: messages } = require(`!extended-translations-loader!i18n/${locale}.json`);
+    const { default: Email } = require(`emails/${type}/index`);
 
     return (
         <IntlProvider locale={locale} messages={messages}>

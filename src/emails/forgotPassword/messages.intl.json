@@ -1,5 +1,15 @@
 {
-    "forgot_the_password_image": "Forgot the password?",
-    "shit_happens": "Oops, this happens. If you wish to continue changing the password, you should enter the following code on the website. If you didn't start this process, just delete this email to be sure – this code may be used to steal your password.",
-    "continue_image": "Continue"
+    "forgot_the_password_image": {
+        "type": "text2png",
+        "defaultMessage": "Forgot the password?",
+        "size": 32,
+        "color": "#fff"
+    },
+    "shit_happens": "Oops, this happens. If you wish to continue changing the password, you should enter the following code on the website. If you haven't requested password recovery, just ignore this email. Without this code no-one will be able to steal your password.",
+    "continue_image": {
+        "type": "text2png",
+        "defaultMessage": "Continue",
+        "size": 18,
+        "color": "#fff"
+    }
 }

@@ -1,8 +1,8 @@
 {
     "components.blocks.code.or": "arba",
     "components.blocks.code.pass_code_in_field": "Įterpkite šį kodą į mūsų svetainės formos lauką:",
+    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
     "components.layout.footer.footer": "Jūs gavote šį pranešimą, nes šis elektroninis paštas buvo įvestas registruojant {serviceLink} tarnybą. Jei tai nebuvo jūsų, tiesiog ignoruokite šį pranešimą.",
-    "components.layout.footer.footer_logo_alt": "Ely.by - Alternatyvios Minecraft paslaugos",
     "components.layout.footer.service_name": "Paskyros Ely.by",
     "components.layout.header.hello_username": "Sveiki, {username}",
     "emails.forgotPassword.continue_image": "Tęsti",
@@ -13,8 +13,8 @@
     "emails.register.confirm_email_image": "Patvirtinti el. paštą",
     "emails.register.install_our_patch_image": "Įdiekite mūsų pleistrą žaidime",
     "emails.register.install_our_patch_text": "Turėtumėte įdiegti mūsų pleistrą, kad veiktų Ely.by apvalkalų sistema. Tai galite rasti mūsų svetainėje esančioje skiltyje \"Įkelti\".",
-    "emails.register.use_tlauncher_image": "Naudoti TLauncher",
-    "emails.register.use_tlauncher_text": "Tai daug lengviau, kai naudojate teisingą priemonę tinkamam tikslui. TLauncher yra viena iš geriausių Minecraft alternatyvių paleidiklių, kuri taip pat turi Ely.by sistemos palaikymą.",
+    "emails.register.useTLLauncher": "Use TL launcher",
+    "emails.register.useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support.",
     "emails.register.we_glad_to_see_you": "Mielai matome jus tarp Ely.by naudotojų. Jūs beveik pasiekėte paskutinį tašką, lieka tik patvirtinti savo el. pašto adresą. Jei norite tęsti, spauskite žemiau esantį mygtuką.",
     "emails.register.welcome_image": "Sveiki atvykę į Ely.by",
     "emails.register.whats_next_image": "Kas toliau?"

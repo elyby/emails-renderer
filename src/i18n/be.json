@@ -1,8 +1,8 @@
 {
     "components.blocks.code.or": "ці",
     "components.blocks.code.pass_code_in_field": "Пазнач гэты код у поле ўводу на сайце:",
+    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
     "components.layout.footer.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе {serviceLink}. Калі гэта быў не ты, то проста выдалі гэты ліст.",
-    "components.layout.footer.footer_logo_alt": "Ely.by - Альтэрнатыўныя сэрвісы Minecraft",
     "components.layout.footer.service_name": "Акаўнты Ely.by",
     "components.layout.header.hello_username": "Прывітанне, {username}",
     "emails.forgotPassword.continue_image": "Працягуць",
@@ -13,8 +13,8 @@
     "emails.register.confirm_email_image": "Пацвердзіць E‑mail",
     "emails.register.install_our_patch_image": "Устанаві наш патч у гульню",
     "emails.register.install_our_patch_text": "Для таго, каб сістема скіноў Ely.by працавала, табе патрэбна ўстанавіць наш патч. Знайсці яго можна ў раздзеле загрузак на сайце.",
-    "emails.register.use_tlauncher_image": "Выкарыстоўвай TLauncher",
-    "emails.register.use_tlauncher_text": "Усё значна лягчэй, калі ты выкарыстоўваеш правільную прыладу для сваёй задачы. TLauncher з'яўляецца лепшым альтэрнатыўным лаунчарам для Minecraft, які таксама мае ўбудаваную падтрымку Ely.by.",
+    "emails.register.useTLLauncher": "Use TL launcher",
+    "emails.register.useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support.",
     "emails.register.we_glad_to_see_you": "Мы рады бачыць цябе ў шэрагах карыстальнікаў праекту Ely.by. Ты ўжо амаль у мэты, засталося толькі пацвердзіць свой E‑mail адрас. Каб зрабіць гэта, калі ласка, націсні на кнопку, якая знаходзіцца ніжэй.",
     "emails.register.welcome_image": "Сардэчна запрашаем на Ely.by",
     "emails.register.whats_next_image": "Што далей?"

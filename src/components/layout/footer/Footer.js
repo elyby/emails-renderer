@@ -1,11 +1,11 @@
 import React from 'react';
-import { FormattedMessage as Message } from 'react-intl';
+import { FormattedMessage as Message, FormattedHTMLMessage as HTMLMessage } from 'react-intl';
 
 import { Table } from 'components/table';
-import { BitmapText } from 'components/text';
 
 import styles from './styles';
 import messages from './messages.intl.json';
+import logoImg from './images/logo.png';
 
 export default function Footer() {
     return (
@@ -21,7 +21,8 @@ export default function Footer() {
                 </td>
                 <td style={styles.footerLogo}>
                     <a href="http://ely.by">
-                        <BitmapText message={messages.footer_logo_alt} />
+                        <img src={logoImg} alt="Ely.by" width="128" height="58" style={{verticalAlign: 'middle'}} />
+                        <HTMLMessage {...messages.alternativeMinecraftServices} />
                     </a>
                 </td>
             </tr>

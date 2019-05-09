@@ -18,7 +18,7 @@ export default {
         borderBottom: '1px dashed #7A7A7A'
     },
     footerLogo: {
-        verticalAlign: 'middle',
-        padding: '0 30px'
+        padding: '0 30px',
+        textAlign: 'center'
     }
 };

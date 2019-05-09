@@ -1,1 +1,0 @@
-export BitmapText from './BitmapText';

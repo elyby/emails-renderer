@@ -1,8 +1,8 @@
 {
     "components.blocks.code.or": "sau",
     "components.blocks.code.pass_code_in_field": "Insereaza acest cod in formularul de pe site-ul nostru:",
+    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
     "components.layout.footer.footer": "Ai primit acest mesaj deoarece acest E-mail a fost introdus intr-o inregistrare la serviciul {serviceLink}. Daca nu ati fost dvs., va rugam sa ingnorati acest mesaj.",
-    "components.layout.footer.footer_logo_alt": "Ely.by - Servicii Minecraft Alternative",
     "components.layout.footer.service_name": "Conturi Ely.by",
     "components.layout.header.hello_username": "Bună ziua, {username}",
     "emails.forgotPassword.continue_image": "Continua",
@@ -13,8 +13,8 @@
     "emails.register.confirm_email_image": "Confirma E-mail-ul",
     "emails.register.install_our_patch_image": "Instaleaza pachetul nostru in joc",
     "emails.register.install_our_patch_text": "Ar trebui sa instalezi pachetul nostru pentru a sistemul de skinuri Ely.by sa functioneze. Poti sa il gasesti in sectiunea \"Incarca\" de pe site-ul nostru.",
-    "emails.register.use_tlauncher_image": "Foloseste TLauncher",
-    "emails.register.use_tlauncher_text": "Este mult mai usor, cand folosesti unealta buna pentru un motiv bun. TLauncher e unul dintre cele mai bune lansatoare alternative pentru Minecraft, care are si suport pentru sistem Ely.by.",
+    "emails.register.useTLLauncher": "Use TL launcher",
+    "emails.register.useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support.",
     "emails.register.we_glad_to_see_you": "Ne bucurăm să vă vedem printre utilizatorii Ely.by. Aproape ați ajuns la punctul final, rămâne doar pentru a vă confirma adresa de E-mail. Apăsați butonul de mai jos pentru a continua.",
     "emails.register.welcome_image": "Bun venit pe Ely.by",
     "emails.register.whats_next_image": "Ce urmeaza?"

@@ -10,16 +10,25 @@ module.exports = function(input) {
 
     const json = JSON.parse(input);
     const result = JSON.stringify(Object.keys(json).reduce((translations, key) => {
-        translations[key] = {
-            id: `${moduleId}.${key}`,
-            defaultMessage: json[key],
-        };
+        const value = json[key];
+        const id = `${moduleId}.${key}`;
+        if (typeof value === 'object') {
+            translations[key] = {
+                ...value,
+                id,
+            };
+        } else {
+            translations[key] = {
+                id,
+                defaultMessage: value,
+            };
+        }
 
         return translations;
     }, {}));
 
     return `
         import { defineMessages } from 'react-intl';
-        export default defineMessages(${result})
+        export default defineMessages(${result});
     `;
 };

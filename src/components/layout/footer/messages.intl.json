@@ -1,5 +1,10 @@
 {
-    "footer": "You have received this message, because this E‑mail was set during registration at the {serviceLink} service. If it wasn't you just delete the message please.",
+    "footer": "You have received this message, because this E‑mail was entered during registration at the {serviceLink} service. If that wasn't you, please just ignore this message.",
     "service_name": "Accounts Ely.by",
-    "footer_logo_alt": "Ely.by - Alternative Minecraft services"
+    "alternativeMinecraftServices": {
+        "type": "text2png",
+        "defaultMessage": "Alternative Minecraft services",
+        "size": 13,
+        "color": "#7a7a7a"
+    }
 }
