@@ -14,7 +14,7 @@ export default function List({label, items, active, onChange}) {
                         onChange && onChange(key);
                     }}
                     style={{
-                        margin: '0 5px',
+                        padding: '0 5px',
                         color: active === key ? 'red' : ''
                     }}
                 >{key}</a>
