@@ -1,7 +1,7 @@
 {
     "components.blocks.code.or": "или",
     "components.blocks.code.pass_code_in_field": "Укажи этот код в поле ввода на сайте:",
-    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
+    "components.layout.footer.alternativeMinecraftServices": "Альтернативные сервисы Minecraft",
     "components.layout.footer.footer": "Ты получил это письмо, т.к. этот E‑mail был указан при регистрации на сервисе {serviceLink}. Если это был не ты, то просто удали это письмо.",
     "components.layout.footer.service_name": "Аккаунты Ely.by",
     "components.layout.header.hello_username": "Привет, {username}",
@@ -13,8 +13,8 @@
     "emails.register.confirm_email_image": "Подтвердить E‑mail",
     "emails.register.install_our_patch_image": "Установи наш патч в игру",
     "emails.register.install_our_patch_text": "Для того, чтобы система скинов Ely.by работала, тебе нужно установить наш патч. Найти его можно в разделе загрузок на сайте.",
-    "emails.register.useTLLauncher": "Use TL launcher",
-    "emails.register.useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support.",
+    "emails.register.useTLLauncher": "Используй TL лаунчер",
+    "emails.register.useTLLauncherText": "Всё гораздо проще, когда ты используешь правильный инструмент для своей задачи. TL лаунчер является лучшим альтернативным лаунчером для Minecraft, который также имеет встроенную поддержку Ely.by.",
     "emails.register.we_glad_to_see_you": "Мы рады видеть тебя в рядах пользователей проекта Ely.by. Ты уже почти у цели, осталось лишь подтвердить свой E‑mail адрес. Чтобы сделать это, пожалуйста, нажми на кнопку, которая расположена ниже.",
     "emails.register.welcome_image": "Добро пожаловать на Ely.by",
     "emails.register.whats_next_image": "Что дальше?"

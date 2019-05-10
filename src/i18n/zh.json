@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "或者",
+    "components.blocks.code.pass_code_in_field": "输入此代码到回执页",
+    "components.layout.footer.alternativeMinecraftServices": "第三方Minecraft服务",
+    "components.layout.footer.footer": "你之所以收到了这个信息，是因为有人在注册{serviceLink}时填写了你的电子邮箱。如果这不是您的操作，请忽略这则信息。",
+    "components.layout.footer.service_name": "Ely.by账户",
+    "components.layout.header.hello_username": "您好{username}",
+    "emails.forgotPassword.continue_image": "继续",
+    "emails.forgotPassword.forgot_the_password_image": "忘记密码？",
+    "emails.forgotPassword.shit_happens": "糟糕，如果您继续修改密码，您必须在网站上输入以下验证码，如果您没有申请找回密码，请无视这封电子邮件。没有人可以在得到验证码的前提下修改您的密码。",
+    "emails.register.choose_you_skin_image": "选择您的皮肤",
+    "emails.register.choose_you_skin_text": "在Ely.by您可以找到其他人正在使用的不同的皮肤",
+    "emails.register.confirm_email_image": "确认电子邮件",
+    "emails.register.install_our_patch_image": "安装我们的补丁到游戏中",
+    "emails.register.install_our_patch_text": "你必须下载我们的补丁才能让Ely.by的皮肤系统生效 你可以在\"上传\"找到它.",
+    "emails.register.useTLLauncher": "使用 TL 启动器",
+    "emails.register.useTLLauncherText": "当正确的使用正确的工具时，要容易得多。 TLauncher是Minecraft最好的启动器替代品之一，也有Ely.by系统支持。",
+    "emails.register.we_glad_to_see_you": "很高兴在Ely.by的用户中见到你。 您已经接近完成了，它仍然只是确认你的电子邮件地址。 请按下按钮以继续。",
+    "emails.register.welcome_image": "欢迎来到Ely.by",
+    "emails.register.whats_next_image": "您可以"
+}

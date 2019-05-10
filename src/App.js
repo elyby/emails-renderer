@@ -14,9 +14,11 @@ import plLocaleData from 'react-intl/locale-data/pl';
 import roLocaleData from 'react-intl/locale-data/ro';
 import ruLocaleData from 'react-intl/locale-data/ru';
 import slLocaleData from 'react-intl/locale-data/sl';
+import srLocaleData from 'react-intl/locale-data/sr';
 import ptLocaleData from 'react-intl/locale-data/pt';
 import ukLocaleData from 'react-intl/locale-data/uk';
 import viLocaleData from 'react-intl/locale-data/vi';
+import zhLocaleData from 'react-intl/locale-data/zh';
 
 addLocaleData(beLocaleData);
 addLocaleData(elLocaleData);
@@ -29,9 +31,11 @@ addLocaleData(plLocaleData);
 addLocaleData(roLocaleData);
 addLocaleData(ruLocaleData);
 addLocaleData(slLocaleData);
+addLocaleData(srLocaleData);
 addLocaleData(ptLocaleData);
 addLocaleData(ukLocaleData);
 addLocaleData(viLocaleData);
+addLocaleData(zhLocaleData);
 
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from './params';
 
