@@ -52,6 +52,9 @@ module.exports = (env, { mode = 'development' }) => {
             new ContextReplacementPlugin(
                 /i18n/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.json`)
             ),
+            new ContextReplacementPlugin(
+                /locale-data/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.js`)
+            ),
             new HtmlWebpackPlugin({
                 template: 'src/index.ejs',
                 favicon: 'src/favicon.ico',
