@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": [
+            "es7",
+            "dom",
+            "dom.iterable"
+        ],
+        "jsx": "preserve",
+        "declaration": false,
+        "skipLibCheck": false,
+        "noEmit": true,
+        "strict": true,
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src"
+    ]
+}

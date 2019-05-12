@@ -4,6 +4,7 @@ const path = require('path');
 
 const { ContextReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const SUPPORTED_LANGUAGES = Object.keys(require('./src/i18n/index.json'));
 
@@ -31,7 +32,7 @@ module.exports = (env, { mode = 'development' }) => {
                 path.join(__dirname, 'src'),
                 path.join(__dirname, 'node_modules'),
             ],
-            extensions: ['.js', '.jsx'],
+            extensions: ['.tsx', '.ts', '.js'],
         },
 
         resolveLoader: {
@@ -49,49 +50,47 @@ module.exports = (env, { mode = 'development' }) => {
         },
 
         plugins: [
-            new ContextReplacementPlugin(
-                /i18n/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.json`)
-            ),
-            new ContextReplacementPlugin(
-                /locale-data/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.js`)
-            ),
+            new ContextReplacementPlugin(/i18n/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.json`)),
+            new ContextReplacementPlugin(/locale-data/, new RegExp(`/(${SUPPORTED_LANGUAGES.join('|')})\\.js`)),
             new HtmlWebpackPlugin({
                 template: 'src/index.ejs',
                 favicon: 'src/favicon.ico',
                 filename: 'index.html',
                 inject: false,
             }),
+            new BundleAnalyzerPlugin({
+                openAnalyzer: false,
+                generateStatsFile: true,
+                analyzerMode: isProduction ? 'static': 'server',
+            }),
         ],
 
         module: {
             rules: [
                 {
-                    test: /\.jsx?$/,
+                    test: /\.[jt]sx?$/,
                     exclude: /node_modules/,
                     use: [
                         {
                             loader: 'babel-loader',
                             options: {
                                 presets: [
-                                    [
-                                        '@babel/preset-env',
-                                        {
-                                            targets: isProduction ? {
-                                                node: '8',
-                                            } : {
-                                                browsers: [
-                                                    'last 1 chrome version',
-                                                    'last 1 firefox version',
-                                                ],
-                                            },
+                                    ['@babel/preset-env', {
+                                        targets: isProduction ? {
+                                            node: '8',
+                                        } : {
+                                            browsers: [
+                                                'last 1 chrome version',
+                                                'last 1 firefox version',
+                                            ],
                                         },
-                                    ],
-                                    [
-                                        '@babel/preset-react',
-                                        {
-                                            development: !isProduction,
-                                        },
-                                    ],
+                                    }],
+                                    ['@babel/preset-react', {
+                                        development: !isProduction,
+                                    }],
+                                    ['@babel/preset-typescript', {
+                                        jsx: true,
+                                    }],
                                 ],
                                 plugins: [
                                     '@babel/plugin-proposal-class-properties',
