@@ -18,8 +18,6 @@ module.exports = (env, { mode = 'development' }) => {
             app: path.join(__dirname, 'src'),
         },
 
-        target: isProduction ? 'node' : 'web',
-
         output: {
             path: path.join(__dirname, 'dist'),
             publicPath: '/',

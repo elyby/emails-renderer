@@ -20,13 +20,6 @@
         "progress": 100,
         "isReleased": true
     },
-    "fil": {
-        "code": "fil",
-        "name": "",
-        "englishName": "Filipino",
-        "progress": 80.4,
-        "isReleased": false
-    },
     "fr": {
         "code": "fr",
         "name": "Français",
@@ -38,7 +31,7 @@
         "code": "id",
         "name": "Bahasa Indonesia",
         "englishName": "Indonesian",
-        "progress": 81.8,
+        "progress": 83.3,
         "isReleased": true
     },
     "lt": {
@@ -87,7 +80,7 @@
         "code": "sr",
         "name": "Српски",
         "englishName": "Serbian",
-        "progress": 81.8,
+        "progress": 100,
         "isReleased": false
     },
     "uk": {

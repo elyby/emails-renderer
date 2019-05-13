@@ -1,7 +1,7 @@
 {
     "components.blocks.code.or": "atau",
     "components.blocks.code.pass_code_in_field": "Masukkan kode ini kedalam bagian formulir situs kami:",
-    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
+    "components.layout.footer.alternativeMinecraftServices": "Layanan Minecraft alternatif",
     "components.layout.footer.footer": "Anda telah menerima pesan ini, karena E-mail ini dimasukkan saat pendaftaran di layanan {serviceLink}. Jika itu bukan anda, mohon abaikan saja pesan ini.",
     "components.layout.footer.service_name": "Akun Ely.by",
     "components.layout.header.hello_username": "Halo, {username}",
