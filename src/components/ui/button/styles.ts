@@ -7,7 +7,7 @@ function generateColor({ base }: Color): CSSProperties {
     };
 }
 
-type Styles = {
+interface Styles {
     [key: string]: CSSProperties;
 }
 

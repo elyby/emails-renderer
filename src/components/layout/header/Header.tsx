@@ -11,20 +11,18 @@ interface Props {
     title: ReactElement;
 }
 
-const Userbar: FunctionComponent<Props> = ({ username, title }) => {
-    return (
-        <Table style={styles.headerImage}>
-            <tr>
-                <td style={styles.headerTextContainer}>
-                    <div style={styles.welcomeUsername}>
-                        <Message {...messages.hello_username} values={{username}} />
-                    </div>
+const Userbar: FunctionComponent<Props> = ({ username, title }) => (
+    <Table style={styles.headerImage}>
+        <tr>
+            <td style={styles.headerTextContainer}>
+                <div style={styles.welcomeUsername}>
+                    <Message {...messages.hello_username} values={{username}} />
+                </div>
 
-                    {title}
-                </td>
-            </tr>
-        </Table>
-    );
-};
+                {title}
+            </td>
+        </tr>
+    </Table>
+);
 
 export default Userbar;

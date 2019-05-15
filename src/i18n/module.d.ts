@@ -6,7 +6,7 @@ declare module 'i18n/index.json' {
             englishName: string;
             progress: number;
             isReleased: boolean;
-        },
+        };
     };
     export default content;
 }

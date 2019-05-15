@@ -10,16 +10,14 @@ interface Props {
     style?: CSSProperties;
 }
 
-const Input: FunctionComponent<Props> = ({ value, style, color = 'green' }) => {
-    return (
-        <div style={{
-            ...styles.input,
-            ...styles[color],
-            ...style
-        }}>
-            {value}
-        </div>
-    );
-};
+const Input: FunctionComponent<Props> = ({ value, style, color = 'green' }) => (
+    <div style={{
+        ...styles.input,
+        ...styles[color],
+        ...style,
+    }}>
+        {value}
+    </div>
+);
 
 export default Input;

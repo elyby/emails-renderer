@@ -1,35 +1,35 @@
-{
-    "parser": "babel-eslint",
-    "plugins": [
-        "react"
-    ],
-
-    "ecmaFeatures": {
-        "jsx": true,
-        "modules": true,
-        "classes": true,
-        "defaultParams": true,
-        "destructuring": true,
-        "spread": true,
-        "arrowFunctions": true,
-        "blockBindings": true,
-        "objectLiteralComputedProperties": true,
-        "objectLiteralDuplicateProperties": true,
-        "objectLiteralShorthandMethods": true,
-        "objectLiteralShorthandProperties": true,
-        "restParams": true,
-        "superInFunctions": true,
-        "templateStrings": true,
-        "experimentalObjectRestSpread": true
+module.exports = {
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        sourceType: 'module',
+        ecmaVersion: 2018,
+        ecmaFeatures: {
+            jsx: true,
+        },
+        project: './tsconfig.json',
     },
 
-    "env": {
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+
+    env: {
         "browser": true,
         "commonjs": true,
         "es6": true
     },
 
-    "extends": "eslint:recommended",
+    plugins: [
+        '@typescript-eslint',
+    ],
+
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+    ],
 
     // @see: http://eslint.org/docs/rules/
     "rules": {
@@ -114,7 +114,7 @@
         "no-path-concat": "warn",
 
         // stylistic
-        "array-bracket-spacing": "error",
+        "array-bracket-spacing": "off", // disable because we want spaces on destructured arrays
         "block-spacing": ["error", "never"],
         "brace-style": ["error", "1tbs", {"allowSingleLine": true}],
         "comma-spacing": "error",
@@ -180,13 +180,18 @@
         "react/display-name": "warn",
         "react/forbid-prop-types": "warn",
         "react/jsx-boolean-value": "warn",
-        "react/jsx-closing-bracket-location": "warn",
+        'react/jsx-closing-bracket-location': ['warn', {
+            nonEmpty: 'line-aligned',
+            selfClosing: 'after-props',
+        }],
         "react/jsx-curly-spacing": "warn",
         "react/jsx-handler-names": ["warn", {"eventHandlerPrefix": "on", "eventHandlerPropPrefix": "on"}],
         "react/jsx-indent-props": "warn",
         "react/jsx-key": "warn",
-        "react/jsx-max-props-per-line": ["warn", {"maximum": 3}],
-        "react/jsx-no-bind": "warn",
+        'react/jsx-max-props-per-line': 'off',
+        "react/jsx-no-bind": ['error', {
+            allowArrowFunctions: true,
+        }],
         "react/jsx-no-duplicate-props": "warn",
         "react/jsx-no-literals": "off",
         "react/jsx-no-undef": "warn",
@@ -205,9 +210,14 @@
         "react/no-string-refs": "warn",
         "react/no-unknown-property": "warn",
         "react/prefer-es6-class": "warn",
-        "react/prop-types": "warn",
+        "react/prop-types": "off", // disable in favor of typescript
         "react/react-in-jsx-scope": "off",
         "react/self-closing-comp": "warn",
-        "react/sort-comp": ["warn", {"order": ["lifecycle", "render", "everything-else"]}]
-    }
-}
+        "react/sort-comp": ["warn", {"order": ["lifecycle", "render", "everything-else"]}],
+
+        // TypeScript
+        '@typescript-eslint/array-type': ['error', 'generic'],
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+    },
+};

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 // NOTE: we are requiring with require(), to enable dynamic dependencies
 // depending on ENV, where App is running in.
 // This allows us better support of hmr and reduces bundle size

@@ -14,37 +14,35 @@ interface Props {
     code: string;
 }
 
-const ForgotPassword: FunctionComponent<Props> = ({ username, link, code }) => {
-    return (
-        <div>
-            <Userbar />
+const ForgotPassword: FunctionComponent<Props> = ({ username, link, code }) => (
+    <div>
+        <Userbar />
 
-            <Header username={username} title={
-                <HTMLMessage {...messages.forgot_the_password_image}/>
-            } />
+        <Header username={username} title={
+            <HTMLMessage {...messages.forgot_the_password_image}/>
+        } />
 
-            <Content>
-                <Table>
-                    <tr>
-                        <td>
-                            <div style={styles.paragraph}>
-                                <Message {...messages.shit_happens} />
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <Code code={code} link={link} color="lightViolet" label={
-                                <HTMLMessage {...messages.continue_image} />
-                            } />
-                        </td>
-                    </tr>
-                </Table>
-            </Content>
+        <Content>
+            <Table>
+                <tr>
+                    <td>
+                        <div style={styles.paragraph}>
+                            <Message {...messages.shit_happens} />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Code code={code} link={link} color="lightViolet" label={
+                            <HTMLMessage {...messages.continue_image} />
+                        } />
+                    </td>
+                </tr>
+            </Table>
+        </Content>
 
-            <Footer />
-        </div>
-    );
-};
+        <Footer />
+    </div>
+);
 
 export default ForgotPassword;

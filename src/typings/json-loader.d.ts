@@ -3,7 +3,7 @@ declare module '*.intl.json' {
         [key: string]: {
             id: string;
             defaultMessage: string;
-        },
+        };
     };
     export default content;
 }

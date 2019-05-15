@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 import React, { FunctionComponent } from 'react';
 import { IntlProvider, addLocaleData } from 'react-intl';
 
