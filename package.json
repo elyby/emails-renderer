@@ -16,7 +16,7 @@
     "homepage": "https://gitlab.com/elyby/email-renderer#README",
     "scripts": {
         "start": "webpack-dev-server --mode=development --progress --colors",
-        "lint": "eslint",
+        "lint": "eslint \"{scripts,src,webpack-utils}/**/*.{js,jsx,ts,tsx}\"",
         "i18n:collect": "./scripts/i18n-collect/index.js",
         "i18n:pull": "node scripts/i18n-crowdin/index.js pull",
         "i18n:push": "node scripts/i18n-crowdin/index.js push",

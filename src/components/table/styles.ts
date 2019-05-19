@@ -6,7 +6,7 @@ const styles: { [key: string]: CSSProperties } = {
         // @ts-ignore
         msoTableLspace: '0pt',
         msoTableRspace: '0pt',
-        width: '100%'
+        width: '100%',
     },
 };
 

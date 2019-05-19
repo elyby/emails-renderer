@@ -9,7 +9,7 @@ interface Props {
 const Table: FunctionComponent<Props> = ({ children, style }) => (
     <table cellPadding="0" cellSpacing="0" style={{
         ...styles.table,
-        ...style
+        ...style,
     }}>
         <tbody>
             {children}

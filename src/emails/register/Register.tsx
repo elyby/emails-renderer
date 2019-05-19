@@ -61,7 +61,7 @@ const Register: FunctionComponent<Props> = ({ username, link, code }) => (
                                     <HTMLMessage {...messages.choose_you_skin_image} />
                                     <div style={{
                                         ...styles.paragraph,
-                                        ...styles.todoItemText
+                                        ...styles.todoItemText,
                                     }}>
                                         <Message {...messages.choose_you_skin_text} />
                                     </div>
@@ -81,7 +81,7 @@ const Register: FunctionComponent<Props> = ({ username, link, code }) => (
                                     <HTMLMessage {...messages.install_our_patch_image} />
                                     <div style={{
                                         ...styles.paragraph,
-                                        ...styles.todoItemText
+                                        ...styles.todoItemText,
                                     }}>
                                         <Message {...messages.install_our_patch_text} />
                                     </div>
@@ -101,7 +101,7 @@ const Register: FunctionComponent<Props> = ({ username, link, code }) => (
                                     <HTMLMessage {...messages.useTLLauncher} />
                                     <div style={{
                                         ...styles.paragraph,
-                                        ...styles.todoItemText
+                                        ...styles.todoItemText,
                                     }}>
                                         <Message {...messages.useTLLauncherText} />
                                     </div>

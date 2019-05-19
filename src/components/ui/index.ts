@@ -1,7 +1,2 @@
-import Button from './button/Button';
-import Input from './input/Input';
-
-export {
-    Button,
-    Input
-};
+export { default as Button } from './button/Button';
+export { default as Input } from './input/Input';

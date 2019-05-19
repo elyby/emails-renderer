@@ -68,9 +68,9 @@ module.exports = function(content) {
         const issuer = options.context ? context : this._module && this._module.issuer && this._module.issuer.context;
 
         const relativeUrl = issuer && path
-                .relative(issuer, filePath)
-                .split(path.sep)
-                .join('/');
+            .relative(issuer, filePath)
+            .split(path.sep)
+            .join('/');
 
         const relativePath = relativeUrl && `${path.dirname(relativeUrl)}/`;
         // eslint-disable-next-line no-bitwise

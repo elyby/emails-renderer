@@ -13,10 +13,11 @@ export default function Footer() {
             <tr>
                 <td style={styles.footerText}>
                     <Message {...messages.footer} values={{
-                        serviceLink:
+                        serviceLink: (
                             <a href="https://account.ely.by" style={styles.footerLink}>
                                 <Message {...messages.service_name} />
                             </a>
+                        ),
                     }} />
                 </td>
                 <td style={styles.footerLogo}>
