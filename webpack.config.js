@@ -59,7 +59,7 @@ module.exports = (env, { mode = 'development' }) => {
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
                 generateStatsFile: true,
-                analyzerMode: isProduction ? 'static': 'server',
+                analyzerMode: isProduction ? 'static' : 'server',
             }),
         ],
 
@@ -93,7 +93,14 @@ module.exports = (env, { mode = 'development' }) => {
                                 plugins: [
                                     '@babel/plugin-proposal-class-properties',
                                     '@babel/plugin-proposal-export-default-from',
+                                    '@babel/plugin-syntax-dynamic-import',
                                 ],
+                            },
+                        },
+                        {
+                            loader: 'ifdef-loader',
+                            options: {
+                                PRODUCTION: isProduction,
                             },
                         },
                     ],

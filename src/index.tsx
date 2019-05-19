@@ -1,47 +1,39 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable spaced-comment */
+import React from 'react';
 
-// NOTE: we are requiring with require(), to enable dynamic dependencies
-// depending on ENV, where App is running in.
-// This allows us better support of hmr and reduces bundle size
+/// #if !PRODUCTION
 
-const React = require('react');
+import ReactDOM from 'react-dom';
+import DevApp from 'devTools';
 
-/* global process: false */
-// eslint-disable-next-line no-negated-condition
-if (process.env.NODE_ENV !== 'production') {
-    const ReactDOM = require('react-dom');
-    const DevApp = require('devTools').default;
+ReactDOM.render(<DevApp />, document.getElementById('app'));
 
-    ReactDOM.render(
-        <DevApp />,
-        document.getElementById('app'),
-    );
-} else {
-    const ReactDOMServer = require('react-dom/server');
-    const { Html } = require('components');
-    const App = require('App').default;
+/// #else
 
-    module.exports = {
-        default(props: {
-            type: string;
-            payload: {
-                locale: string;
-                [key: string]: string;
-            };
-            assetsHost?: string;
-        }) {
-            if (props.assetsHost) {
-                // noinspection JSUnresolvedVariable
-                __webpack_public_path__ = props.assetsHost.replace(/\/*$/, '/'); // eslint-disable-line
+import ReactDOMServer from 'react-dom/server';
+import { Html } from 'components';
+import App from 'App';
 
-                Reflect.deleteProperty(props, 'assetsHost');
-            }
-
-            return ReactDOMServer.renderToStaticMarkup(
-                <Html>
-                    <App {...props} />
-                </Html>
-            );
-        }
+interface Props {
+    type: string;
+    payload: {
+        locale: string;
+        [key: string]: string;
     };
+    assetsHost?: string;
 }
+
+export default ({ assetsHost, ...props }: Props) => {
+    if (assetsHost) {
+        // eslint-disable-next-line camelcase,@typescript-eslint/camelcase
+        __webpack_public_path__ = assetsHost.replace(/\/*$/, '/');
+    }
+
+    return ReactDOMServer.renderToStaticMarkup(
+        <Html>
+            <App {...props} />
+        </Html>
+    );
+};
+
+/// #endif

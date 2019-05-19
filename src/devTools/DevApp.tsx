@@ -55,7 +55,7 @@ const DevApp: FunctionComponent = () => {
 
     const payload = useMemo(() => ({
         locale,
-        ...(availableFixtures[fixture] || availableFixtures['default'] || {}),
+        ...(availableFixtures[fixture] || availableFixtures.default || {}),
     }), [locale, availableFixtures, fixture]);
 
     const onMinimizeClick = useCallback((event: BaseSyntheticEvent) => {
@@ -81,19 +81,22 @@ const DevApp: FunctionComponent = () => {
                 </a>]
 
                 <div style={isMinimized ? {display: 'none'} : {}}>
-                    <List label="Lang"
+                    <List
+                        label="Lang"
                         items={SUPPORTED_LANGUAGES}
                         active={locale}
                         onChange={setLocale}
                     />
 
-                    <List label="Email"
+                    <List
+                        label="Email"
                         items={AVAILABLE_TEMPLATES}
                         active={template}
                         onChange={setTemplate}
                     />
 
-                    <List label="Fixtures"
+                    <List
+                        label="Fixtures"
                         items={Object.keys(availableFixtures)}
                         active={fixture}
                         onChange={setFixture}

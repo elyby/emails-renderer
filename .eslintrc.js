@@ -31,8 +31,12 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
     ],
 
+    globals: {
+        __webpack_public_path__: true,
+    },
+
     // @see: http://eslint.org/docs/rules/
-    "rules": {
+    rules: {
         // possible errors (including eslint:recommended)
         "valid-jsdoc": ["warn", {
             "requireParamDescription": false,
@@ -181,8 +185,22 @@ module.exports = {
         "react/forbid-prop-types": "warn",
         "react/jsx-boolean-value": "warn",
         'react/jsx-closing-bracket-location': ['warn', {
-            nonEmpty: 'line-aligned',
             selfClosing: 'after-props',
+            // We want to keep bracket in the next case:
+            // <Component simpleProp="123" objectProp={{
+            //     param: 'value',
+            // }}>
+            //
+            // But put it on the next line if props are chopped down:
+            // <Component
+            //     simpleProp="123"
+            //     objectProp={{
+            //         param: 'value',
+            //     ]}
+            // >
+            //
+            // So until we'll find the solution, let's disable this rule.
+            nonEmpty: false,
         }],
         "react/jsx-curly-spacing": "warn",
         "react/jsx-handler-names": ["warn", {"eventHandlerPrefix": "on", "eventHandlerPropPrefix": "on"}],

@@ -27,7 +27,6 @@ const App: FunctionComponent<Params> = ({ type, payload: { locale, ...params } }
     const { default: Email } = require(`emails/${type}/index`);
 
     return (
-        // @ts-ignore have no idea why
         <IntlProvider locale={locale} messages={messages}>
             <BaseLayout>
                 <Email {...params} />
