@@ -55,7 +55,7 @@ const DevApp: FunctionComponent = () => {
 
     const payload = useMemo(() => ({
         locale,
-        ...(availableFixtures[fixture] || availableFixtures.default || {}),
+        ...availableFixtures[fixture] || availableFixtures.default || {},
     }), [locale, availableFixtures, fixture]);
 
     const onMinimizeClick = useCallback((event: BaseSyntheticEvent) => {
@@ -69,7 +69,8 @@ const DevApp: FunctionComponent = () => {
                 opacity: 0.4,
                 position: 'fixed',
             } : {}}>
-                [<a
+                [
+                <a
                     href="#"
                     style={{
                         textDecoration: 'none',
@@ -78,7 +79,8 @@ const DevApp: FunctionComponent = () => {
                     onClick={onMinimizeClick}
                 >
                     {isMinimized ? '+' : '-'}
-                </a>]
+                </a>
+                ]
 
                 <div style={isMinimized ? {display: 'none'} : {}}>
                     <List

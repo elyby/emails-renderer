@@ -9,7 +9,8 @@ interface Props {
 
 const List: FunctionComponent<Props> = ({ label, items, active, onChange = () => {} }) => (
     <div>
-        {label}:
+        {label}
+        :
         {items.map((item) => (
             <a
                 href="#"

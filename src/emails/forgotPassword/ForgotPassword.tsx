@@ -19,7 +19,7 @@ const ForgotPassword: FunctionComponent<Props> = ({ username, link, code }) => (
         <Userbar />
 
         <Header username={username} title={
-            <HTMLMessage {...messages.forgot_the_password_image}/>
+            <HTMLMessage {...messages.forgot_the_password_image} />
         } />
 
         <Content>
