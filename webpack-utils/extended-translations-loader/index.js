@@ -14,7 +14,6 @@ module.exports = async function(content) {
 
     const callback = this.async();
 
-    const { publicPath } = this._compiler.options.output;
     const ROOT_PATH = path.join(this.rootContext, 'src');
     const localeName = path.basename(this.resourcePath, `.${this.resourcePath.split('.').pop()}`);
 
@@ -40,7 +39,7 @@ module.exports = async function(content) {
                 return;
             }
 
-            global.__webpack_public_path__ = publicPath; // eslint-disable-line camelcase
+            global.__webpack_public_path__ = ''; // eslint-disable-line camelcase
             const { src, width, height } = this.exec(module, fileName);
             Reflect.deleteProperty(global, '__webpack_public_path__');
 
@@ -111,7 +110,7 @@ module.exports = async function(content) {
         translations[key] = await examine(key, json[key]);
 
         return translations;
-    }, Promise.resolve({})));
+    }, Promise.resolve({}))).replace(/(<img src=\\")(assets)/g, '$1" + __webpack_public_path__ + "$2');
 
     callback(null, `
         import { defineMessages } from 'react-intl';
