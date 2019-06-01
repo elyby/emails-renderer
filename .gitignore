@@ -1,6 +1,3 @@
 node_modules
 dist/*
-!dist/app.js
-!dist/assets
 .idea
-vendor
