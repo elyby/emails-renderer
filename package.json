@@ -1,13 +1,19 @@
 {
     "name": "@elyby/emails-renderer",
     "version": "1.0.0",
-    "description": "",
+    "description": "Tool for rendering multilingual templates sent to E-mail",
     "main": "dist/app.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/elyby/emails-renderer"
     },
     "author": "SleepWalker <dev@udf.su>",
+    "maintainers": [
+        {
+            "name": "ErickSkrauch",
+            "email": "erickskrauch@ely.by"
+        }
+    ],
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/elyby/emails-renderer/issues"
