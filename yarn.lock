@@ -2731,11 +2731,11 @@ extend@~3.0.2:
 "extended-translations-loader@file:webpack-utils/extended-translations-loader":
   version "1.0.0"
   dependencies:
-    "@lesechos/image-size-loader" "file:../../.cache/yarn/v4/npm-extended-translations-loader-1.0.0-fe1c90c6-5a79-4e5e-8995-7c33cb1db7d9-1559762166005/node_modules/image-size-loader"
+    "@lesechos/image-size-loader" "file:../../.cache/yarn/v4/npm-extended-translations-loader-1.0.0-72c3a128-fbb9-4e3d-9a24-9f2972009e1b-1559771604821/node_modules/image-size-loader"
     glob "^7.1.4"
     loader-utils "^1.2.3"
     qs "^6.0.0"
-    text2png-loader "file:../../.cache/yarn/v4/npm-extended-translations-loader-1.0.0-fe1c90c6-5a79-4e5e-8995-7c33cb1db7d9-1559762166005/node_modules/text2png-loader"
+    text2png-loader "file:../../.cache/yarn/v4/npm-extended-translations-loader-1.0.0-72c3a128-fbb9-4e3d-9a24-9f2972009e1b-1559771604821/node_modules/text2png-loader"
     tmp "^0.0.33"
 
 external-editor@^3.0.3:
@@ -2814,6 +2814,14 @@ fast-safe-stringify@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.6.tgz#04b26106cc56681f51a044cfc0d76cf0008ac2c2"
   integrity sha512-q8BZ89jjc+mz08rSxROs8VsrBBcn1SIw1kq9NjolL509tkABRk9io01RAjSaEv1Xb2uFLt8VtRiZbGp5H8iDtg==
 
+fastify-graceful-shutdown@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/fastify-graceful-shutdown/-/fastify-graceful-shutdown-2.0.1.tgz#2ed228dc8eb8b225cdff5ed5b714264462e64d38"
+  integrity sha512-7G+K5Iqo1VVPsykkn3yuXnZvwzAmdIOQWvHzfGZ7yJQW3y7DnHtbiVzLdYBMvbNHQf9nt4LN483heTzGaqz8LA==
+  dependencies:
+    fastify-plugin "^1.5.0"
+    fastparallel "^2.3.0"
+
 fastify-plugin@^1.5.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/fastify-plugin/-/fastify-plugin-1.6.0.tgz#c8198b08608f20c502b5dad26b36e9ae27206d7c"
@@ -2850,6 +2858,14 @@ fastify@^2.4.1:
     rfdc "^1.1.2"
     secure-json-parse "^1.0.0"
     tiny-lru "^6.0.1"
+
+fastparallel@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/fastparallel/-/fastparallel-2.3.0.tgz#1e709bfb6a03993f3857e3ce7f01311ce7602613"
+  integrity sha1-HnCb+2oDmT84V+POfwExHOdgJhM=
+  dependencies:
+    reusify "^1.0.0"
+    xtend "^4.0.1"
 
 fastq@^1.6.0:
   version "1.6.0"
@@ -6803,7 +6819,7 @@ ws@^6.0.0:
   dependencies:
     async-limiter "~1.0.0"
 
-xtend@^4.0.0, xtend@~4.0.1:
+xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=

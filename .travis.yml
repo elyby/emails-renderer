@@ -7,7 +7,28 @@ cache:
   directories:
     - node_modules
 
-script:
-  - yarn lint
-  - yarn tsc
-  - yarn build:quiet
+stages:
+  - test
+  - name: deploy
+    if: branch = master
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - yarn lint
+        - yarn tsc
+        - yarn build:quiet
+    - stage: deploy
+      services:
+        - docker
+      before_script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+      script:
+        - export DOCKER_TAG="${TRAVIS_TAG:-dev}"
+        - >
+          docker build
+          --target app
+          -t elyby/emails-renderer:$DOCKER_TAG
+          .
+        - docker push elyby/emails-renderer:$DOCKER_TAG

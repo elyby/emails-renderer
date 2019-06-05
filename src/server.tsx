@@ -1,20 +1,21 @@
 /* eslint-env node */
 /* eslint-disable spaced-comment */
 import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 
 import path from 'path';
 
 import createFastify from 'fastify';
+// @ts-ignore
+import fastifyGracefulShutdown from 'fastify-graceful-shutdown';
 import fastifyStatic from 'fastify-static';
-import { AddressInfo } from 'net';
 
-import ReactDOMServer from 'react-dom/server';
 import { Html } from 'components';
 import App, { Params } from 'App';
 
 const fastify = createFastify({
     logger: {
-        level: 'warn',
+        level: 'info',
     },
 });
 
@@ -26,6 +27,8 @@ interface GetTemplateUrlParams {
     locale: string;
     template: string;
 }
+
+fastify.register(fastifyGracefulShutdown);
 
 fastify.register(fastifyStatic, {
     root: path.join(__dirname, 'assets'),
@@ -72,8 +75,7 @@ fastify.get<GetTemplateQueryParams, GetTemplateUrlParams>('/templates/:locale/:t
 
 (async () => {
     try {
-        await fastify.listen(3000);
-        fastify.log.info(`server listening on ${(fastify.server.address() as AddressInfo)!.port}`);
+        await fastify.listen(3000, '0.0.0.0');
     } catch (err) {
         fastify.log.error(err);
         process.exit(1);
