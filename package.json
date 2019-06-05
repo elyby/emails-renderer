@@ -20,13 +20,16 @@
     },
     "homepage": "https://github.com/elyby/emails-renderer#README",
     "scripts": {
+        "clean": "rm -rf dist/",
         "start": "webpack-dev-server --mode=development --application=devtool --progress --colors",
         "start:server": "webpack --mode=development --application=server --progress --colors && node dist/app.js",
         "lint": "eslint \"{scripts,src,webpack-utils}/**/*.{js,jsx,ts,tsx}\"",
         "i18n:collect": "./scripts/i18n-collect/index.js",
         "i18n:pull": "node scripts/i18n-crowdin/index.js pull",
         "i18n:push": "node scripts/i18n-crowdin/index.js push",
-        "build": "rm -rf dist/ && webpack --mode=production --application=server --progress --colors"
+        "build": "yarn run clean && yarn run build:webpack --progress",
+        "build:quiet": "yarn run clean && yarn run build:webpack --quiet",
+        "build:webpack": "webpack  --mode=production --application=server --colors --bail"
     },
     "dependencies": {
         "fastify": "^2.4.1",
