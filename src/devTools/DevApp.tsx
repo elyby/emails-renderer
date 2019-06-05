@@ -1,4 +1,12 @@
-import React, { BaseSyntheticEvent, FunctionComponent, useCallback, useEffect, useMemo, useState } from 'react';
+import React, {
+    BaseSyntheticEvent,
+    FunctionComponent,
+    useCallback,
+    useEffect,
+    useLayoutEffect,
+    useMemo,
+    useState,
+} from 'react';
 
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from 'params';
 
@@ -22,7 +30,7 @@ const DevApp: FunctionComponent = () => {
     const [ isMinimized, setIsMinimized ] = useState(false);
 
     // Load stored state from local storage on the first run
-    useEffect(() => {
+    useLayoutEffect(() => {
         let state: LocalStorageState;
         try {
             state = JSON.parse(localStorage.getItem('emailRendererState') || '');

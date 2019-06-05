@@ -5,24 +5,35 @@ const path = require('path');
 const { ContextReplacementPlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const nodeExternals = require('webpack-node-externals');
 
 const SUPPORTED_LANGUAGES = Object.keys(require('./src/i18n/index.json'));
 
-module.exports = (env, { mode = 'development' }) => {
+module.exports = (env, { mode = 'development', application = 'server' }) => {
     const isProduction = mode === 'production';
+    const isDevelopment = !isProduction;
+    const isDevTool = application === 'devtool';
+    const isServer = !isDevTool;
 
     return {
-        devtool: isProduction ? false : 'source-map',
+        devtool: isDevTool ? 'source-map' : false,
 
         entry: {
-            app: path.join(__dirname, 'src'),
+            app: path.join(__dirname, 'src', application),
+        },
+
+        target: isServer ? 'node' : 'web',
+
+        externals: isServer ? [nodeExternals()] : [],
+
+        node: {
+            __dirname: false,
         },
 
         output: {
             path: path.join(__dirname, 'dist'),
             publicPath: '/',
-            filename: isProduction ? '[name].js' : '[name].js?[hash]',
-            libraryTarget: isProduction ? 'commonjs2' : undefined,
+            filename: '[name].js',
         },
 
         resolve: {
@@ -59,7 +70,7 @@ module.exports = (env, { mode = 'development' }) => {
             new BundleAnalyzerPlugin({
                 openAnalyzer: false,
                 generateStatsFile: true,
-                analyzerMode: isProduction ? 'static' : 'server',
+                analyzerMode: isDevTool ? 'server' : 'static',
             }),
         ],
 
@@ -74,8 +85,8 @@ module.exports = (env, { mode = 'development' }) => {
                             options: {
                                 presets: [
                                     ['@babel/preset-env', {
-                                        targets: isProduction ? {
-                                            node: '8',
+                                        targets: isServer ? {
+                                            node: isDevelopment ? 'current' : '12',
                                         } : {
                                             browsers: [
                                                 'last 1 chrome version',
@@ -84,7 +95,7 @@ module.exports = (env, { mode = 'development' }) => {
                                         },
                                     }],
                                     ['@babel/preset-react', {
-                                        development: !isProduction,
+                                        development: isDevelopment,
                                     }],
                                     ['@babel/preset-typescript', {
                                         jsx: true,
@@ -95,12 +106,6 @@ module.exports = (env, { mode = 'development' }) => {
                                     '@babel/plugin-proposal-export-default-from',
                                     '@babel/plugin-syntax-dynamic-import',
                                 ],
-                            },
-                        },
-                        {
-                            loader: 'ifdef-loader',
-                            options: {
-                                PRODUCTION: isProduction,
                             },
                         },
                     ],

@@ -1,28 +1,30 @@
 {
-    "name": "email-renderer",
+    "name": "@elyby/emails-renderer",
     "version": "1.0.0",
     "description": "",
-    "main": "src/index.js",
+    "main": "dist/app.js",
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@gitlab.com/elyby/email-renderer.git"
+        "url": "https://github.com/elyby/emails-renderer"
     },
-    "keywords": [],
     "author": "SleepWalker <dev@udf.su>",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://gitlab.com/elyby/email-renderer/issues"
+        "url": "https://github.com/elyby/emails-renderer/issues"
     },
-    "homepage": "https://gitlab.com/elyby/email-renderer#README",
+    "homepage": "https://github.com/elyby/emails-renderer#README",
     "scripts": {
-        "start": "webpack-dev-server --mode=development --progress --colors",
+        "start": "webpack-dev-server --mode=development --application=devtool --progress --colors",
+        "start:server": "webpack --mode=development --application=server --progress --colors && node dist/app.js",
         "lint": "eslint \"{scripts,src,webpack-utils}/**/*.{js,jsx,ts,tsx}\"",
         "i18n:collect": "./scripts/i18n-collect/index.js",
         "i18n:pull": "node scripts/i18n-crowdin/index.js pull",
         "i18n:push": "node scripts/i18n-crowdin/index.js push",
-        "build": "rm -rf dist/ && webpack --mode=production --progress --colors"
+        "build": "rm -rf dist/ && webpack --mode=production --application=server --progress --colors"
     },
     "dependencies": {
+        "fastify": "^2.4.1",
+        "fastify-static": "^2.4.0",
         "react": "^16.8.4",
         "react-dom": "^16.8.4",
         "react-intl": "^2.0.0"
@@ -36,7 +38,6 @@
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.3.3",
         "@elyby/eslint-plugin": "^0.2.0",
-        "@types/react": "^16.8.17",
         "@types/react-dom": "^16.8.4",
         "@types/react-intl": "^2.3.17",
         "@types/webpack-env": "^1.13.9",
@@ -52,7 +53,6 @@
         "html-webpack-plugin": "^3.2.0",
         "i18n-collect": "file:scripts/i18n-collect",
         "i18n-crowdin": "file:scripts/i18n-crowdin",
-        "ifdef-loader": "^2.1.1",
         "intl-json-loader": "file:./webpack-utils/intl-json-loader",
         "json-loader": "^0.5.7",
         "text2png-loader": "file:./webpack-utils/text2png-loader",
@@ -60,7 +60,8 @@
         "webpack": "^4.29.6",
         "webpack-bundle-analyzer": "^3.3.2",
         "webpack-cli": "^3.3.0",
-        "webpack-dev-server": "^3.2.1"
+        "webpack-dev-server": "^3.2.1",
+        "webpack-node-externals": "^1.7.2"
     },
     "engines": {
         "node": ">=8.0"

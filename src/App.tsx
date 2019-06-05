@@ -11,8 +11,7 @@ export interface Params {
     type: string;
     payload: {
         locale: string;
-        [key: string]: any;
-    };
+    } & Record<string, any>;
 }
 
 const App: FunctionComponent<Params> = ({ type, payload: { locale, ...params } }) => {
