@@ -16,6 +16,9 @@ const Button: FunctionComponent<Props> = ({ label, style, color = 'green' }) => 
         ...styles[color],
         ...style,
     }}>
+        {/* Some email clients don't apply a line-height rule until some text appears inside.
+            Add a zero-width space to ensure that text is always present, even if a <img> is passed */}
+        &#8203;
         {label}
     </div>
 );
