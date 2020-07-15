@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <Table style={styles.footer}>
             <tr>
-                <td style={styles.footerText}>
+                <td rowSpan={2} style={styles.footerText}>
                     <Message {...messages.footer} values={{
                         serviceLink: (
                             <a href="https://account.ely.by" style={styles.footerLink}>
@@ -22,7 +22,13 @@ export default function Footer() {
                 </td>
                 <td style={styles.footerLogo}>
                     <a href="http://ely.by">
-                        <img src={logoImg} alt="Ely.by" width="128" height="58" style={{verticalAlign: 'middle'}} />
+                        <img src={logoImg} alt="Ely.by" width="128" height="58" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style={styles.footerLogoSubtitle}>
+                    <a href="http://ely.by">
                         <HTMLMessage {...messages.alternativeMinecraftServices} />
                     </a>
                 </td>

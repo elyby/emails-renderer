@@ -1,7 +1,13 @@
-import { green } from 'components/ui/colors';
 import { CSSProperties } from 'react';
 
-const styles: { [key: string]: CSSProperties } = {
+import { green } from 'components/ui/colors';
+
+const footerLogoBaseStyles: CSSProperties = {
+    padding: '0 30px',
+    textAlign: 'center',
+};
+
+const styles: Record<string, CSSProperties> = {
     footer: {
         borderTop: `10px solid ${green.base}`,
         background: '#DDD8CE',
@@ -19,8 +25,12 @@ const styles: { [key: string]: CSSProperties } = {
         borderBottom: '1px dashed #7A7A7A',
     },
     footerLogo: {
-        padding: '0 30px',
-        textAlign: 'center',
+        ...footerLogoBaseStyles,
+        verticalAlign: 'bottom',
+    },
+    footerLogoSubtitle: {
+        ...footerLogoBaseStyles,
+        verticalAlign: 'top',
     },
 };
 
