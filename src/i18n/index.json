@@ -6,6 +6,13 @@
         "progress": 100,
         "isReleased": true
     },
+    "cs": {
+        "code": "cs",
+        "name": "čeština",
+        "englishName": "Czech",
+        "progress": 100,
+        "isReleased": false
+    },
     "el": {
         "code": "el",
         "name": "Ελληνικά",
@@ -20,11 +27,18 @@
         "progress": 100,
         "isReleased": true
     },
+    "eo": {
+        "code": "eo",
+        "name": "Esperanto",
+        "englishName": "Esperanto",
+        "progress": 100,
+        "isReleased": false
+    },
     "fr": {
         "code": "fr",
         "name": "Français",
         "englishName": "French",
-        "progress": 81.8,
+        "progress": 100,
         "isReleased": true
     },
     "id": {
@@ -45,7 +59,7 @@
         "code": "pl",
         "name": "Polski",
         "englishName": "Polish",
-        "progress": 81.8,
+        "progress": 100,
         "isReleased": false
     },
     "pt": {

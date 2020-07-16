@@ -5,7 +5,7 @@
     "components.layout.footer.footer": "Ты атрымаў гэты ліст, бо гэты E‑mail быў пазначаны пры рэгістрацыі на сэрвісе {serviceLink}. Калі гэта быў не ты, то проста выдалі гэты ліст.",
     "components.layout.footer.service_name": "Акаўнты Ely.by",
     "components.layout.header.hello_username": "Прывітанне, {username}",
-    "emails.forgotPassword.continue_image": "Працягуць",
+    "emails.forgotPassword.continue_image": "Працягнуць",
     "emails.forgotPassword.forgot_the_password_image": "Ты забыў пароль?",
     "emails.forgotPassword.shit_happens": "Гэтак адбываецца, нічога. Каб працягнуць працэдуру аднаўлення пароля, табе патрэбна ўвесці спецыяльны код у поле на сайце. Калі гэта зрабіў не ты, то, калі ласка, проста нічога не рабі - злачынцы не змогуць скрасці твой акаунт без кода ніжэй.",
     "emails.register.choose_you_skin_image": "Выберы свой скін",

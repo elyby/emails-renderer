@@ -1,7 +1,7 @@
 {
     "components.blocks.code.or": "ou",
     "components.blocks.code.pass_code_in_field": "Insérez ce code dans le champ de formulaire de notre site:",
-    "components.layout.footer.alternativeMinecraftServices": "Alternative Minecraft services",
+    "components.layout.footer.alternativeMinecraftServices": "Services alternatifs de Minecraft",
     "components.layout.footer.footer": "Vous avez reçu ce message, car cet e-mail a été saisi lors de l'inscription au service des {serviceLink}. Si ce n'était pas vous, ignorez ce message.",
     "components.layout.footer.service_name": "Comptes Ely.by",
     "components.layout.header.hello_username": "Bonjour {username},",
@@ -13,8 +13,8 @@
     "emails.register.confirm_email_image": "Confirmez votre E-mail",
     "emails.register.install_our_patch_image": "Installez notre application dans le jeu",
     "emails.register.install_our_patch_text": "Vous devrez installer notre application pour faire fonctionner le système de skin Ely.by. Vous pouvez le trouver dans la section 'Télécharger' sur notre site.",
-    "emails.register.useTLLauncher": "Use TL launcher",
-    "emails.register.useTLLauncherText": "It is much easier, when you use right tool for the right purpose. The TL launcher is one of the best alternative launchers for the Minecraft, that also has Ely.by system support.",
+    "emails.register.useTLLauncher": "Utiliser TLauncher",
+    "emails.register.useTLLauncherText": "C'est beaucoup plus facile lorsque vous utilisez le bon outil dans le bon but. Le Tlauncher est l'un des meilleurs lanceurs alternatifs pour Minecraft, qui prend également en charge le système Ely.by.",
     "emails.register.we_glad_to_see_you": "Nous sommes heureux de vous voir parmi les utilisateurs de Ely.by. Vous avez presque atteint le dernier point, il ne vous reste qu'à confirmer votre adresse E-mail. Appuyez sur le bouton ci-dessous pour continuer.",
     "emails.register.welcome_image": "Bienvenue sur Ely.by",
     "emails.register.whats_next_image": "C'est quoi après?"
