@@ -2746,11 +2746,11 @@ extend@~3.0.2:
 "extended-translations-loader@file:webpack-utils/extended-translations-loader":
   version "1.0.0"
   dependencies:
-    "@lesechos/image-size-loader" "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-2a404bf5-e6c1-4416-ac35-d35a69d061a8-1594902075342/node_modules/image-size-loader"
+    "@lesechos/image-size-loader" "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-933f9d99-bd59-4d39-b59d-8350c97ab0e9-1594903645361/node_modules/image-size-loader"
     glob "^7.1.4"
     loader-utils "^1.2.3"
     qs "^6.0.0"
-    text2png-loader "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-2a404bf5-e6c1-4416-ac35-d35a69d061a8-1594902075342/node_modules/text2png-loader"
+    text2png-loader "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-933f9d99-bd59-4d39-b59d-8350c97ab0e9-1594903645361/node_modules/text2png-loader"
     tmp "^0.0.33"
 
 external-editor@^3.0.3:

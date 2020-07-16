@@ -46,7 +46,7 @@ module.exports = async function(content) {
             const targetWidth = Math.ceil(width / scale);
             const targetHeight = Math.ceil(height / scale);
 
-            resolve(`<img src="${src}" alt="${text}" width="${targetWidth}" height="${targetHeight}" style="vertical-align: middle" />`);
+            resolve(`<img src="${src}" alt="${text}" width="${targetWidth}" height="${targetHeight}" style="font-size: ${size}px; color: ${color}; vertical-align: middle" />`);
         });
     });
 
