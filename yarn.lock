@@ -1054,9 +1054,9 @@ acorn-walk@^6.1.1:
   integrity sha512-OtUw6JUTgxA2QoqqmrmQ7F2NYqiBPi/L2jqHyFtllhOUvXYQXf0Z1CYUinIfyT4bTCGmrA7gX9FvHA81uzCoVw==
 
 acorn@^6.0.5, acorn@^6.0.7:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
-  integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
+  integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
 ajv-errors@^1.0.0:
   version "1.0.1"
@@ -2751,11 +2751,11 @@ extend@~3.0.2:
 "extended-translations-loader@file:webpack-utils/extended-translations-loader":
   version "1.0.0"
   dependencies:
-    "@lesechos/image-size-loader" "file:../../../.cache/yarn/v6/npm-extended-translations-loader-1.0.0-a858425d-be42-4fbf-9b0a-3bc14853865b-1616888301438/node_modules/image-size-loader"
+    "@lesechos/image-size-loader" "file:./webpack-utils/image-size-loader"
     glob "^7.1.4"
     loader-utils "^1.2.3"
     qs "^6.0.0"
-    text2png-loader "file:../../../.cache/yarn/v6/npm-extended-translations-loader-1.0.0-a858425d-be42-4fbf-9b0a-3bc14853865b-1616888301438/node_modules/text2png-loader"
+    text2png-loader "file:./webpack-utils/text2png-loader"
     tmp "^0.0.33"
 
 external-editor@^3.0.3:
