@@ -1,20 +1,20 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 import { IntlProvider, addLocaleData } from 'react-intl';
 
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from 'params';
 
-import { BaseLayout } from 'components';
+import { Html, BaseLayout } from 'components';
 
-export interface Params {
+interface Params {
     type: string;
     payload: {
         locale: string;
     } & Record<string, any>;
 }
 
-const App: FunctionComponent<Params> = ({ type, payload: { locale, ...params } }) => {
+const App: ComponentType<Params> = ({ type, payload: { locale, ...params } }) => {
     if (!locale || SUPPORTED_LANGUAGES.indexOf(locale) === -1) {
         locale = DEFAULT_LANGUAGE;
     }
@@ -26,11 +26,13 @@ const App: FunctionComponent<Params> = ({ type, payload: { locale, ...params } }
     const { default: Email } = require(`emails/${type}/index`);
 
     return (
-        <IntlProvider locale={locale} messages={messages}>
-            <BaseLayout>
-                <Email {...params} />
-            </BaseLayout>
-        </IntlProvider>
+        <Html lang={locale}>
+            <IntlProvider locale={locale} messages={messages}>
+                <BaseLayout>
+                    <Email {...params} />
+                </BaseLayout>
+            </IntlProvider>
+        </Html>
     );
 };
 

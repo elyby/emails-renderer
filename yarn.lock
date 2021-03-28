@@ -802,6 +802,11 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@types/rtl-detect@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/rtl-detect/-/rtl-detect-1.0.0.tgz#5791e18a111f2b8b5b328160af97f3991a5697a5"
+  integrity sha512-lyYh44YgrejEK9/5rhASghvRUOxrSJyyyQmqK7L6F/V5qs6PY1RfCi1VbjSkY6kuDt7lzQyhd006slhda4Oypg==
+
 "@types/webpack-env@^1.13.9":
   version "1.13.9"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.13.9.tgz#a67287861c928ebf4159a908d1fb1a2a34d4097a"
@@ -2746,11 +2751,11 @@ extend@~3.0.2:
 "extended-translations-loader@file:webpack-utils/extended-translations-loader":
   version "1.0.0"
   dependencies:
-    "@lesechos/image-size-loader" "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-933f9d99-bd59-4d39-b59d-8350c97ab0e9-1594903645361/node_modules/image-size-loader"
+    "@lesechos/image-size-loader" "file:../../../.cache/yarn/v6/npm-extended-translations-loader-1.0.0-a858425d-be42-4fbf-9b0a-3bc14853865b-1616888301438/node_modules/image-size-loader"
     glob "^7.1.4"
     loader-utils "^1.2.3"
     qs "^6.0.0"
-    text2png-loader "file:../../Library/Caches/Yarn/v6/npm-extended-translations-loader-1.0.0-933f9d99-bd59-4d39-b59d-8350c97ab0e9-1594903645361/node_modules/text2png-loader"
+    text2png-loader "file:../../../.cache/yarn/v6/npm-extended-translations-loader-1.0.0-a858425d-be42-4fbf-9b0a-3bc14853865b-1616888301438/node_modules/text2png-loader"
     tmp "^0.0.33"
 
 external-editor@^3.0.3:
@@ -5639,6 +5644,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rtl-detect@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rtl-detect/-/rtl-detect-1.0.2.tgz#8eca316f5c6563d54df4e406171dd7819adda67f"
+  integrity sha512-5X1422hvphzg2a/bo4tIDbjFjbJUOaPZwqE6dnyyxqwFqfR+tBcvfqapJr0o0VygATVCGKiODEewhZtKF+90AA==
 
 run-async@^2.2.0:
   version "2.3.0"

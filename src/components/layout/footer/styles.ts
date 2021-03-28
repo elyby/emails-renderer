@@ -8,9 +8,11 @@ const styles: Record<string, CSSProperties> = {
         background: '#DDD8CE',
         height: '135px',
     },
+    paddingColumn: {
+        width: '30px',
+    },
     footerText: {
         verticalAlign: 'middle',
-        paddingLeft: '30px',
         fontSize: '13px',
         color: '#7A7A7A',
     },
@@ -20,7 +22,6 @@ const styles: Record<string, CSSProperties> = {
         borderBottom: '1px dashed #7A7A7A',
     },
     footerLogo: {
-        padding: '0 30px',
         textAlign: 'center',
     },
 };

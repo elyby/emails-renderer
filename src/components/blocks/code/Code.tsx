@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement } from 'react';
+import React, { ComponentType, ReactElement } from 'react';
 
 import { FormattedMessage as Message } from 'react-intl';
 
@@ -15,7 +15,7 @@ interface Props {
     color?: Colors;
 }
 
-const Code: FunctionComponent<Props> = ({ code, link, label, color = 'green' }) => (
+const Code: ComponentType<Props> = ({ code, link, label, color = 'green' }) => (
     <div style={styles.codeWrapper}>
         <div>
             <a href={link}>

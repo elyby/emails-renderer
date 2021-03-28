@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "หรือ",
+    "components.blocks.code.pass_code_in_field": "ใส่โค้ดนี้ลงในเว็บไซต์",
+    "components.layout.footer.alternativeMinecraftServices": "บริการอื่นๆของ Minecraft",
+    "components.layout.footer.footer": "คุณได้รับข้อความนี้เพราะว่าคุณได้สมัครสมาชิคที่ \n{serviceLink} \nถ้านี้ไม่ใช่การกระทำของคุณโปรดละทิ้งข้อความนี้ ",
+    "components.layout.footer.service_name": "บัญชีของ Ely.by",
+    "components.layout.header.hello_username": "สวัสดี {username}",
+    "emails.forgotPassword.continue_image": "ต่อไป",
+    "emails.forgotPassword.forgot_the_password_image": "ลืมรหัสผ่าน?",
+    "emails.forgotPassword.shit_happens": "โอ้มีการขอเปลี่ยนรหัสเกิดขึ้น ถ้าคุณต้องการจะเปลี่ยนรหัสโปรดนำโค้ดข้างล่างไปใส่ในเว็บไซต์\nแต่ถ้าคุณไม่ได้ขอเปลี่ยนรหัสโปรดละทิ้งข้อความนี้\nและห้ามให้คนอื่นรู้โค้ดโดยเด็ดขาดเพื่อความปลอดภัย",
+    "emails.register.choose_you_skin_image": "เลือก Skin ของคุณ",
+    "emails.register.choose_you_skin_text": "ใน Ely.by's จะมีหน้าเลือก Skin แสนสวยและเท่มากมายให้คุณมาใช้งาน",
+    "emails.register.confirm_email_image": "ยืนยัน E-mail",
+    "emails.register.install_our_patch_image": "ติดตั้ง Patch ของเรา",
+    "emails.register.install_our_patch_text": "คุณต้องทำการลง Patch ของทางเราเพื่อให้ระบบ Skin ใช้งานได้ คุณสามารถหาได้จากเมนู \"ดาวน์โหลด\" ในเว็บไซต์",
+    "emails.register.useTLLauncher": "ใช้งาน TL launcher",
+    "emails.register.useTLLauncherText": "มันจะง่ายขึ้นมากถ้าคุณใช้โปรแกรมที่ถูกต้องตามที่เราจัดสรรมาให้ TL launcher คือหนึ่งในตัวเกมที่ดีที่สุด\nแถมยังรองรับ Ely.by อีกด้วย",
+    "emails.register.we_glad_to_see_you": "พวกเรายินดีที่ได้เห็นคุณหนึ่งในผู้ใช้ Ely.by คุณได้มาถึงขั้นตอนสุดท้ายของการสมัครแล้ว\nที่เหลือคุณก็แค่ยืนยัน E-mail โปรดกดปุ่มข้างล่างเพื่อดำเนินการต่อ",
+    "emails.register.welcome_image": "ยินดีต้อนรับสู่ Ely.by",
+    "emails.register.whats_next_image": "ต้องทำอะไรต่อ?"
+}

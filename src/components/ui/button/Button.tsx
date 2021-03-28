@@ -1,4 +1,4 @@
-import React, { CSSProperties, FunctionComponent, ReactElement } from 'react';
+import React, { CSSProperties, ComponentType, ReactElement } from 'react';
 
 import { Colors } from 'components/ui/colors';
 
@@ -10,7 +10,7 @@ interface Props {
     color?: Colors;
 }
 
-const Button: FunctionComponent<Props> = ({ label, style, color = 'green' }) => (
+const Button: ComponentType<Props> = ({ label, style, color = 'green' }) => (
     <div style={{
         ...styles.button,
         ...styles[color],

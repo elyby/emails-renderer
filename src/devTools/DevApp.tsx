@@ -1,6 +1,6 @@
 import React, {
     BaseSyntheticEvent,
-    FunctionComponent,
+    ComponentType,
     useCallback,
     useEffect,
     useLayoutEffect,
@@ -23,7 +23,7 @@ interface LocalStorageState {
     isMinimized: boolean;
 }
 
-const DevApp: FunctionComponent = () => {
+const DevApp: ComponentType = () => {
     const [ locale, setLocale ] = useState(DEFAULT_LANGUAGE);
     const [ template, setTemplate ] = useState(AVAILABLE_TEMPLATES[0]);
     const [ fixture, setFixture ] = useState('default');

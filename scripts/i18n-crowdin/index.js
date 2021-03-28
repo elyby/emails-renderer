@@ -37,6 +37,7 @@ const RELEASED_LOCALES = ['be', 'fr', 'id', 'pt', 'ru', 'uk', 'vi', 'zh'];
  * Array of Crowdin locales to our internal locales representation
  */
 const LOCALES_MAP = {
+    'es-ES': 'es',
     'pt-BR': 'pt',
     'zh-CN': 'zh',
 };
@@ -146,7 +147,7 @@ async function pull() {
             throw new Error('Unable to find translation file. Please check the CROWDIN_FILE_PATH param.');
         }
 
-        const progress = fileInfo.words_approved / fileInfo.words * 100;
+        const progress = fileInfo.words_translated / fileInfo.words * 100;
         if (!RELEASED_LOCALES.includes(toInternalLocale(locale.code)) && progress < MIN_RELEASE_PROGRESS) {
             return null;
         }

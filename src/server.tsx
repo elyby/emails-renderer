@@ -10,8 +10,7 @@ import createFastify from 'fastify';
 import fastifyGracefulShutdown from 'fastify-graceful-shutdown';
 import fastifyStatic from 'fastify-static';
 
-import { Html } from 'components';
-import App, { Params } from 'App';
+import App from 'App';
 
 const fastify = createFastify({
     logger: {
@@ -52,24 +51,16 @@ fastify.get<GetTemplateQueryParams, GetTemplateUrlParams>('/templates/:locale/:t
     reply.header('Content-Type', 'text/html');
 
     const { assetsHost, ...payloads } = request.query;
-
-    const params: Params = {
-        type: template,
-        payload: {
-            locale,
-            ...payloads,
-        },
-    };
-
     if (assetsHost) {
         // eslint-disable-next-line camelcase,@typescript-eslint/camelcase
         __webpack_public_path__ = `${assetsHost.replace(/\/+$/, '')}/`;
     }
 
     return ReactDOMServer.renderToStaticMarkup(
-        <Html>
-            <App {...params} />
-        </Html>
+        <App
+            type={template}
+            payload={{locale, ...payloads}}
+        />
     );
 });
 

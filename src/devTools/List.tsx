@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 
 interface Props {
     label: string;
@@ -7,7 +7,7 @@ interface Props {
     onChange: (item: string) => any;
 }
 
-const List: FunctionComponent<Props> = ({ label, items, active, onChange = () => {} }) => (
+const List: ComponentType<Props> = ({ label, items, active, onChange = () => {} }) => (
     <div>
         {label}
         :

@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 import { FormattedMessage as Message, FormattedHTMLMessage as HTMLMessage } from 'react-intl';
 
 import { Userbar, Header, Content, Footer } from 'components/layout';
@@ -14,7 +14,7 @@ interface Props {
     code: string;
 }
 
-const ForgotPassword: FunctionComponent<Props> = ({ username, link, code }) => (
+const ForgotPassword: ComponentType<Props> = ({ username, link, code }) => (
     <div>
         <Userbar />
 

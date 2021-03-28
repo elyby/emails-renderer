@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 
 import styles from './styles';
 
 import { Table } from 'components/table';
 
-const BaseLayout: FunctionComponent = ({ children }) => (
+const BaseLayout: ComponentType = ({ children }) => (
     <Table style={styles.body}>
         <tr>
             <td>

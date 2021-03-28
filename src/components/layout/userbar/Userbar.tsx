@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 
 import { Table } from 'components/table';
 
 import styles from './styles';
 import logoImage from './logo.png';
 
-const Userbar: FunctionComponent = () => (
+const Userbar: ComponentType = () => (
     <Table style={styles.userbar}>
         <tr>
             <td style={styles.marginColumn} />

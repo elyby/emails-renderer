@@ -1,4 +1,4 @@
-import React, { CSSProperties, FunctionComponent } from 'react';
+import React, { CSSProperties, ComponentType } from 'react';
 
 import { Colors } from 'components/ui/colors';
 
@@ -10,7 +10,7 @@ interface Props {
     style?: CSSProperties;
 }
 
-const Input: FunctionComponent<Props> = ({ value, style, color = 'green' }) => (
+const Input: ComponentType<Props> = ({ value, style, color = 'green' }) => (
     <div style={{
         ...styles.input,
         ...styles[color],

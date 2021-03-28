@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "o",
+    "components.blocks.code.pass_code_in_field": "Ilagay ang code na ito sa form field ng aming site:",
+    "components.layout.footer.alternativeMinecraftServices": "Mga alternatibong serbisyo para sa Minecraft",
+    "components.layout.footer.footer": "Natanggap mo ang mensaheng ito, dahil itong e-mail ay ipinasok habang nagpaparegistrasyon sa serbisyong {serviceLink}. Kung hindi ikaw iyon, mangyaring na wag pansinin ang mensaheng ito.",
+    "components.layout.footer.service_name": "Ely.by Accounts",
+    "components.layout.header.hello_username": "Kamusta, {username}",
+    "emails.forgotPassword.continue_image": "Magpatuloy",
+    "emails.forgotPassword.forgot_the_password_image": "Kinalimutan mo ang password mo?",
+    "emails.forgotPassword.shit_happens": "Nako, nagyayari ito. Kung nais mong magpatuloy sa pagpapalit ng iyong password, kailangan mong ipasok ang code na ito sa website. Kung hindi mo hiniling ang pagbawi ng password, balewalain lang ang email na ito. Kung wala ang code na ito, kahit sino ay hindi makakanakaw ng iyong password.",
+    "emails.register.choose_you_skin_image": "Piliin ang iyong skin",
+    "emails.register.choose_you_skin_text": "Makakahanap ka ng iba't ibang uri ng mga skin na matatagpuan sa catalog ng Ely.by, na maaring kaagad mailagay.",
+    "emails.register.confirm_email_image": "Kumpirmahin ang E-mail",
+    "emails.register.install_our_patch_image": "I-install ang aming patch sa laro",
+    "emails.register.install_our_patch_text": "Dapat mong i-install ang aming patch upang gumawa ng balat sistema ng pagtatrabaho sa Ely.by ni. Maaari mong mahanap ito sa seksyon ng 'I-load ang' sa aming site.",
+    "emails.register.useTLLauncher": "Gamitin ang TLauncher",
+    "emails.register.useTLLauncherText": "Napakadali, kapag ikaw ay gumamit ng tamang tool para sa tamang layunin. Ang TLauncher ay isa sa mga napakagandang alternatibong launcher para sa Minecraft, na mayroon ding suporta para sa sistema ng Ely.by.",
+    "emails.register.we_glad_to_see_you": "Kami ay natutuwa na makikita ka sa mga gumagamit ng Ely.by. Halos mo umabot ang panghuling punto, na kailangan lamang magpakumpurmahin ang iyong e-mail address. Paki-pindutin ang butones sa ilalim upang magpatuloy.",
+    "emails.register.welcome_image": "Maligayang pagdating sa Ely.by",
+    "emails.register.whats_next_image": "Ano ang susunod?"
+}

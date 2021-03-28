@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "o",
+    "components.blocks.code.pass_code_in_field": "Inserte este código en nuestro sitio dentro del cuadro de dialogo:",
+    "components.layout.footer.alternativeMinecraftServices": "Servicios de Minecraft alternativos",
+    "components.layout.footer.footer": "Recibiste este mensaje de correo, porque este email fue introducido en el servicio de registro de {serviceLink}. Si no fuiste tú, por favor ignora este mensaje.",
+    "components.layout.footer.service_name": "Cuentas Ely.by",
+    "components.layout.header.hello_username": "Hola, {username}",
+    "emails.forgotPassword.continue_image": "Coninuar",
+    "emails.forgotPassword.forgot_the_password_image": "¿Olvidaste la contraseña?",
+    "emails.forgotPassword.shit_happens": "Oops, esto suele pasar. Si desea continuar cambiando la contraseña, introduzca el siguiente código en nuestra pagina web. Si no has solicitado restablecer tu contraseña, por favor ignora este mensaje. Sin este código nadie será capaz de robar tu contraseña.",
+    "emails.register.choose_you_skin_image": "Elige tu skin",
+    "emails.register.choose_you_skin_text": "En el catálogo de Ely.by puedes encontrar una gran diversidad de skins, los cuales están listos para ser probados.",
+    "emails.register.confirm_email_image": "Confirma E-mail",
+    "emails.register.install_our_patch_image": "Instala nuestro parche en el juego",
+    "emails.register.install_our_patch_text": "Deberías instalar nuestro parche para que el sistema de skins de Ely.by funcione. Puedes encontrarlo en la sección de 'Carga' de nuestro sitio web.",
+    "emails.register.useTLLauncher": "Usa TL launcher",
+    "emails.register.useTLLauncherText": "Es mucho más fácil, cuando usas la herramienta adecuada, para el trabajo adecuado. El ejecutable TL es uno de los mejores ejecutables alternativos para Minecraft, que también tiene el sistema Ely.by incorporado.",
+    "emails.register.we_glad_to_see_you": "Nos alegramos de verte entre los usuarios de Ely.by. Casi has llegado al punto final, sólo queda confirmar tu correo electrónico. Por favor, presione el botón abajo para continuar.",
+    "emails.register.welcome_image": "Bienvenido a Ely.by",
+    "emails.register.whats_next_image": "Y, ¿ahora?"
+}

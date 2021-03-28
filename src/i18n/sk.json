@@ -1,0 +1,21 @@
+{
+    "components.blocks.code.or": "alebo",
+    "components.blocks.code.pass_code_in_field": "Vložte tento kód do formulára na našich stránkach:",
+    "components.layout.footer.alternativeMinecraftServices": "Alternatívna služba pre Minecraft",
+    "components.layout.footer.footer": "Táto správa Vám bola doručená, pretože tento e-mail bol zadaný v registrácií v službe {serviceLink}. Ak ste ju nezadali Vy, ignorujte prosím túto správu.",
+    "components.layout.footer.service_name": "Účty Ely.by",
+    "components.layout.header.hello_username": "Ahoj, {username}",
+    "emails.forgotPassword.continue_image": "Pokračovať",
+    "emails.forgotPassword.forgot_the_password_image": "Zabudnuté heslo?",
+    "emails.forgotPassword.shit_happens": "Ak chcete pokračovať v zmene hesla, mali by ste vložiť nasledujúci kód na stránkach. Ak ste nežiadali o obnovenie hesla, prosím tento e-mail ignorujte. Bez tohto kódu nikto nebude schopný ukradnúť Vaše heslo.",
+    "emails.register.choose_you_skin_image": "Vyberte si svoj skin",
+    "emails.register.choose_you_skin_text": "V katalógu Ely.by môžete nájsť veľkú škálu skinov, ktoré sú pripravené na použitie.",
+    "emails.register.confirm_email_image": "Potvrdiť E-mail",
+    "emails.register.install_our_patch_image": "Nainštalovať náš patch v hre",
+    "emails.register.install_our_patch_text": "Mali by ste nainštalovať náš patch na to, aby fungoval systém Ely.by. Nájdete ho v sekcii 'Načítať' na stránkach.",
+    "emails.register.useTLLauncher": "Použite TL spúšťač",
+    "emails.register.useTLLauncherText": "Je to oveľa jednoduchšie, keď používate správny nástroj na správny účel. TL spúšťač je jedným z najlepších alternatívnych spúšťačov pre Minecraft, ktorý má tiež podporu systému Ely.by.",
+    "emails.register.we_glad_to_see_you": "Sme radi, že Vás vidíme medzi používateľmi Ely.by. Vaše registrácia je takmer hotová, stačí potvrdiť už len vašu e-mail adresu. Ak chcete pokračovať, stlačte tlačidlo nižšie.",
+    "emails.register.welcome_image": "Vitajte na Ely.by",
+    "emails.register.whats_next_image": "Čo ďalej?"
+}

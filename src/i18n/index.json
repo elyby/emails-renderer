@@ -1,4 +1,11 @@
 {
+    "ar": {
+        "code": "ar",
+        "name": "اللغة العربية",
+        "englishName": "Arabic",
+        "progress": 98.6,
+        "isReleased": false
+    },
     "be": {
         "code": "be",
         "name": "Беларуская",
@@ -10,6 +17,13 @@
         "code": "cs",
         "name": "čeština",
         "englishName": "Czech",
+        "progress": 100,
+        "isReleased": false
+    },
+    "de": {
+        "code": "de",
+        "name": "Deutsch",
+        "englishName": "German",
         "progress": 100,
         "isReleased": false
     },
@@ -34,6 +48,20 @@
         "progress": 100,
         "isReleased": false
     },
+    "es": {
+        "code": "es",
+        "name": "",
+        "englishName": "Spanish",
+        "progress": 100,
+        "isReleased": false
+    },
+    "fil": {
+        "code": "fil",
+        "name": "",
+        "englishName": "Filipino",
+        "progress": 100,
+        "isReleased": false
+    },
     "fr": {
         "code": "fr",
         "name": "Français",
@@ -41,12 +69,40 @@
         "progress": 100,
         "isReleased": true
     },
+    "he": {
+        "code": "he",
+        "name": "עברית",
+        "englishName": "Hebrew",
+        "progress": 100,
+        "isReleased": false
+    },
+    "hr": {
+        "code": "hr",
+        "name": "hrvatski jezik",
+        "englishName": "Croatian",
+        "progress": 81.8,
+        "isReleased": false
+    },
     "id": {
         "code": "id",
         "name": "Bahasa Indonesia",
         "englishName": "Indonesian",
-        "progress": 83.3,
+        "progress": 100,
         "isReleased": true
+    },
+    "it": {
+        "code": "it",
+        "name": "Italiano",
+        "englishName": "Italian",
+        "progress": 100,
+        "isReleased": false
+    },
+    "ko": {
+        "code": "ko",
+        "name": "한국어",
+        "englishName": "Korean",
+        "progress": 98.6,
+        "isReleased": false
     },
     "lt": {
         "code": "lt",
@@ -83,6 +139,13 @@
         "progress": 100,
         "isReleased": true
     },
+    "sk": {
+        "code": "sk",
+        "name": "slovenčina",
+        "englishName": "Slovak",
+        "progress": 100,
+        "isReleased": false
+    },
     "sl": {
         "code": "sl",
         "name": "slovenski jezik",
@@ -94,6 +157,27 @@
         "code": "sr",
         "name": "Српски",
         "englishName": "Serbian",
+        "progress": 100,
+        "isReleased": false
+    },
+    "th": {
+        "code": "th",
+        "name": "ไทย",
+        "englishName": "Thai",
+        "progress": 100,
+        "isReleased": false
+    },
+    "tr": {
+        "code": "tr",
+        "name": "Türkçe",
+        "englishName": "Turkish",
+        "progress": 100,
+        "isReleased": false
+    },
+    "udm": {
+        "code": "udm",
+        "name": "",
+        "englishName": "Udmurt",
         "progress": 100,
         "isReleased": false
     },

@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react';
+import React, { ComponentType } from 'react';
 
 import styles from './styles';
 
-const Content: FunctionComponent = ({ children }) => (
+const Content: ComponentType = ({ children }) => (
     <div style={styles.content}>
         {children}
     </div>
