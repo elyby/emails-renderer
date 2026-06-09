@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 import React, { ComponentType } from 'react';
-import { IntlProvider, addLocaleData } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE } from 'params';
 
 import { Html, BaseLayout } from 'components';
+import { loadLocale } from 'services/i18n';
 
 interface Params {
     type: string;
@@ -19,9 +20,7 @@ const App: ComponentType<Params> = ({ type, payload: { locale, ...params } }) =>
         locale = DEFAULT_LANGUAGE;
     }
 
-    const { default: messages } = require(`!extended-translations-loader!i18n/${locale}.json`);
-    const localeData = require(`react-intl/locale-data/${locale}.js`);
-    addLocaleData(localeData);
+    const messages = loadLocale(locale);
 
     const { default: Email } = require(`emails/${type}/index`);
 
